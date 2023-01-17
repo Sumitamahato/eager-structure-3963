@@ -46,9 +46,12 @@ menuBtn4.addEventListener('click',()=>{
 
 // Logout
 let logout=document.getElementById('logOut');
-
+let flag=localStorage.getItem('loginStatus') || false;
 logout.addEventListener('click',()=>{ 
     location.replace('adminLogin.html');
     flag=false;
     localStorage.setItem('loginStatus',flag);
 })
+if(flag=="false"){
+    location.replace('adminLogin.html');
+}
