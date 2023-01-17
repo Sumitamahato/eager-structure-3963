@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NavBar */
+nav{
+    border-bottom: 1px solid black;
+    display: flex;
+    margin-top: 25px;
+}
+nav>h2{
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* HandBurger option */
+#menu{
+    cursor: pointer;
+    margin-left: 55px;
+}
+
+
+/* Main Window */
+#mainWindow{
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+}
+
+/* Main Menu */
+
+#mainMenu{
+    width: 10%;
+    display: grid;
+    grid-template-columns: repeat(1,fr);
+    gap: 15px;
+    border-right: 1px solid black;
+    padding: 25px;
+}
+
+.menuBtns{
+    cursor: pointer;
+}
+
+/* Main Display */
+
+#mainDisplay{
+    width: 80%;
+    padding: 25px;
+}
+
+/* Logout */
+
+#logOut{
+    cursor: pointer;
+    margin-right: 50px;
+}
