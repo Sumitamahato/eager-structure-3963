@@ -53,6 +53,30 @@ nav>h2{
     padding: 25px;
 }
 
+ /* Grid Display */
+ #gridDisplay{
+    margin-top: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    border: 1px solid red;   
+ }
+
+ #gridDisplay > div {
+    margin: auto;
+    text-align: left;
+    /* width: 250px; */
+    height: 450px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+  img{
+    width: 100%;
+  }
+  
 /* Logout */
 
 #logOut{
