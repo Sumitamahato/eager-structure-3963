@@ -58,7 +58,6 @@ nav>h2{
     margin-top: 15px;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
     gap: 10px;
     border: 1px solid red;   
  }
@@ -77,32 +76,131 @@ nav>h2{
     width: 100%;
   }
 
+  /* Adding Form */
+  #productAddingForm{
+  width: 350px;
+  /* height: 460px; */
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 20px;
+  text-align: center;
+  /* margin: 50px 0 0 400px; */
+  box-shadow: rgba(8, 240, 43, 0.3) 0px 1px 2px 0px, rgba(10, 238, 21, 0.233) 0px 2px 6px 2px;
+  }
+
+  #productAddingForm > input,select,label {
+  width: 60%;  
+  height: 30px;
+  margin: 5px 0px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid rgb(206, 206, 206);
+}
+#productAddingForm > input:focus{
+  outline: 1px solid rgb(2, 250, 2);
+  border: 0;
+}
+#productAddingForm > #submitButton{
+    width: 80%;
+    height: 40px;
+    margin: 15px 0;
+    background-color: rgb(51, 171, 53);
+    color: white;
+    font-size: 18px;
+    border: 1px solid rgb(206, 206, 206);
+}
+#productAddingForm > #submitButton:hover{
+    background-color: rgb(24, 222, 27);
+    border: 2px solid rgb(168, 148, 148);
+    cursor: pointer;
+}
+
+/* Updating Form */
+#updatingForm{
+    width: 350px;
+    /* height: 460px; */
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 20px;
+    text-align: center;
+    /* margin: 50px 0 0 400px; */
+    box-shadow: rgba(8, 240, 43, 0.3) 0px 1px 2px 0px, rgba(10, 238, 21, 0.233) 0px 2px 6px 2px;
+    }
+  
+    #updatingForm > input,select,label {
+    width: 60%;  
+    height: 30px;
+    margin: 5px 0px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: 1px solid rgb(206, 206, 206);
+  }
+  #updatingForm > input:focus{
+    outline: 1px solid rgb(2, 250, 2);
+    border: 0;
+  }
+  #updatingForm > #submitButton{
+      width: 80%;
+      height: 40px;
+      margin: 15px 0;
+      background-color: rgb(51, 171, 53);
+      color: white;
+      font-size: 18px;
+      border: 1px solid rgb(206, 206, 206);
+  }
+  #updatingForm > #submitButton:hover{
+      background-color: rgb(24, 222, 27);
+      border: 2px solid rgb(168, 148, 148);
+      cursor: pointer;
+  }
+
     /* Media Query */
-  @media (min-width: 200px) {
+  @media (min-width: 500px) {
     #gridDisplay{
         grid-template-columns: repeat(1,1fr);  
      }
      #gridDisplay > div {
+        width: 70%;
         height: auto;
-      }
+    }
+    #gridDisplay > .addProduct{
+        margin-left: 10%;
+    } 
+    #gridDisplay > #productAddingForm{
+        /* text-align: center; */
+    } 
+
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     #gridDisplay{
         grid-template-columns: repeat(2,1fr);  
-     }
-     #gridDisplay > div {
+    }
+    #gridDisplay > div {
+        width: 90%;
         height: auto;
-      }
+    }
+    #gridDisplay > .addProduct{
+        margin-left: 150px;
+    } 
+    #gridDisplay > #productAddingForm{
+        /* text-align: center; */
+    }
   }
   
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     #gridDisplay{
-        grid-template-columns: repeat(4,1fr);  
-     }
-     #gridDisplay > div {
-        height: 440px;
+        grid-template-columns: repeat(4,1fr); 
+    }
+    #gridDisplay > div {
+        height: auto;
       }
+    #gridDisplay > .addProduct{
+        margin-left: 130%;
+    } 
+    #gridDisplay > #productAddingForm{
+
+    }
   }
   
 /* Logout */
