@@ -76,6 +76,34 @@ nav>h2{
   img{
     width: 100%;
   }
+
+    /* Media Query */
+  @media (min-width: 200px) {
+    #gridDisplay{
+        grid-template-columns: repeat(1,1fr);  
+     }
+     #gridDisplay > div {
+        height: auto;
+      }
+  }
+
+  @media (min-width: 500px) {
+    #gridDisplay{
+        grid-template-columns: repeat(2,1fr);  
+     }
+     #gridDisplay > div {
+        height: auto;
+      }
+  }
+  
+  @media (min-width: 900px) {
+    #gridDisplay{
+        grid-template-columns: repeat(4,1fr);  
+     }
+     #gridDisplay > div {
+        height: 440px;
+      }
+  }
   
 /* Logout */
 
