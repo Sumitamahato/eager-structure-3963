@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/cartPage.css">
+</head>
+<body>
+    <div class="main">
+        <!------------------------------------- Cart Heading ----------------------------------------->
+        <div class="cartHeading">
+            <h2>Shopping Cart</h2>
+            <a href="#"><i class="fa-solid fa-caret-left"></i>Continue Shopping</a>
+        </div>
+        <hr>
+        <!-------------------------------------- Cart Items ------------------------------------------>
+        <div class="shoppingCart">
+            <div class="thead">
+                <p>ITEM</p>
+                <p>PICK UP OR DELIVERY</p>
+                <p>QUANTITY</p>
+                <p>PRICE</p>
+            </div>
+            <div class="trow">
+                <div class="item">
+                    <img src="https://www.dollartree.com/ccstore/v1/images/?source=/file/v3723578153817899444/products/236105.jpg&height=100&width=100" alt="">
+                </div>
+                <div>
+                    <h4>Round Plastic Storage Baskets with Handles</h4>
+                    <p>SKU#: 236105</p>
+                </div>
+                <div class="pickOrDeliv">
+                    <div>
+                        <input class="delivOpt" type="radio" name="delivOpt" value="Free" checked>
+                        <label for="delivOpt" id="freeLabel"><h4><span id="free">FREE</span> In-Store Pickup</h4></label>
+                    </div>
+                    <div>
+                        <input class="delivOpt" type="radio" name="delivOpt" value="parcel">
+                        <label for="delivOpt"><h4>Parcel Delivery</h4></label>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <h4>Units</h4>
+                    <select name="quantity" id="quantity">
+                        <option value="10">10</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                    <button>Remove</button>
+                </div>
+                <div class="price">
+                    <p><span>₹</span>45.00</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!---------------------------------- Cart Payment System ------------------------------------->
+        <div class="payment">
+            <div class="descript">
+                <p>In-Store Estimated Pick-Up dates are valid for orders placed <br> 
+                    before 9:30 p.m. ET. <br> <br>
+
+                    If your order is placed after 9:30 p.m. ET, the Estimated Pick-Up <br> 
+                    date noted on your Order Confirmation email is not <br> 
+                    guaranteed and could vary. Once your order has been shipped, <br> 
+                    your Shipment Confirmation email will include the confirmed <br> 
+                    Estimated Pick-Up date.</p>
+            </div>
+            <div class="paypal">
+                <div class="paypalBtn">
+                    <button class="ppCheckout">
+                        <img src="images/paypal1.png" alt=""><span></span>
+                    </button>
+                    <br>
+                    <span>A safer, faster way to pay.</span>
+                </div>
+                <div class="paypalBtn">
+                    <button class="ppCredit">
+                        <img src="images/paypal2.png" alt="">
+                    </button>
+                    <br>
+                    <span>Buy Now. Pay Over Time.</span>
+                </div>
+            </div>
+            <div class="bill">
+                <div class="promo">
+                    <h4>Add Promo Code</h4>
+                    <input type="text">
+                    <button>Update</button>
+                </div>
+                <div class="orderSummary">
+                    <p>Order Summary</p>
+                    <hr>
+                    <div>
+                        <p>Items In Your Cart:</p>
+                        <p class="itemInCart"><span>₹</span>45.00</p>
+                    </div>
+                    <div>
+                        <p>Shipping:</p>
+                        <p class="shipping"><span>₹</span>-</p>
+                    </div>
+                    <div>
+                        <p>Estimated Tax:</p>
+                        <p class="tax"><span>₹</span>2.70</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>ESTIMATED ORDER TOTAL:</p>
+                        <p class="total"><span>₹</span>47.70</p>
+                    </div>
+                </div>
+                <div class="proceedtoCheckout">
+                    <h4>or</h4>
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------- Email Sign Up ---------------------------------------->
+        <hr style="margin-bottom: 10px;">
+        <div class="signUp">
+            <a href="#">Email Sign Up</a>
+            <p>Be the first to know about new arrivals online, in-store specials & events, fun ideas & inspiration, and more!</p>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
