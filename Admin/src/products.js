@@ -59,12 +59,15 @@ let ProductsUrl = "https://63987374fe03352a94d1697f.mockapi.io/Products";
 //Show Products
 let mainDisplayContainer = document.getElementById("mainDisplay");
 let gridDisplayContainer = document.getElementById("gridDisplay");
-let showProdButton = document.getElementById("showProd");
 
-let showProductData = JSON.parse(localStorage.getItem("showProducts")) || [];
+//Product Buttons
+let showProdButton = document.getElementById("showProd");
+let addProdButton = document.getElementById("addProd");
+let editProdButton = document.getElementById("editProd");
 
 let mainData = [];
 
+//Show product button
 showProdButton.addEventListener("click",()=>{
     async function fetchData(){
         try {
@@ -73,8 +76,6 @@ showProdButton.addEventListener("click",()=>{
             mainData = data;
             console.log(data)
             showProdCard(data)
-            showProductData.push(data);
-            localStorage.setItem("showProducts",JSON.stringify(showProductData))
             alert("Products Available")
         } catch (error) {
             alert("Products not available")
@@ -107,4 +108,95 @@ function showProdCard(data){
         tr.append(Image,Rating,Description,Stock,Price);
         gridDisplayContainer.append(tr);
     });
+}
+
+//Add product Button
+addProdButton.addEventListener("click",()=>{
+    addProductCard()
+})
+
+function addProductCard(){
+    gridDisplayContainer.innerHTML = null;
+
+    gridDisplayContainer.innerHTML=`
+    <form action="" id="productAddingForm">
+        <h2>ADD PRODUCT 🛍️</h2>
+        <input type="text" name="img" placeholder="Image Url" id="">
+        <input type="number" name="rate" placeholder="Rating" id="">
+        <input type="text" name="title" placeholder="Title" id="">
+        <input type="text" name="desc" placeholder="Description" id="">
+        <input type="number" name="stock" placeholder="Stock" id="">
+        <input type="number" name="price" placeholder="Price" id="">
+        <input type="text" name="category" placeholder="Category" id=""><br/>
+        <input type="submit" id="submitButton" value="Submit">
+    </form>
+    `
+
+    let form=document.getElementById('productAddingForm');
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        fetch(ProductsUrl,{
+            method:"POST",
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({
+                "image":e.target[0].value,
+                "rating":e.target[1].value,
+                "title":e.target[2].value,
+                "description":e.target[3].value,
+                "stock":e.target[4].value,
+                'price':e.target[5].value,
+                "category":e.target[6].value
+            })
+        })
+        alert("Products added Successfully")
+    })
+}
+
+//Update Products
+editProdButton.addEventListener("click",()=>{
+    editProductCard()
+});
+
+function editProductCard(){
+    gridDisplayContainer.innerHTML = null;
+
+    gridDisplayContainer.innerHTML=`
+    <form action="" id="updatingForm">
+        <h2>Update PRODUCTS 🛍️</h2>
+        <input type="text" name="img" placeholder="Image Url" id="updateImgInput">
+        <input type="number" name="rate" placeholder="Rating" id="updateRateInput">
+        <input type="text" name="title" placeholder="Title" id="updateTitleInput">
+        <input type="text" name="desc" placeholder="Description" id="updateDescInput">
+        <input type="number" name="stock" placeholder="Stock" id="updateStockInput">
+        <input type="number" name="price" placeholder="Price" id="updatePriceInput">
+        <input type="text" name="category" placeholder="Category" id="updateCatgInput"><br/>
+        <input type="submit" id="submitButton" value="Submit">
+    </form>
+    `
+
+    let form=document.getElementById('productAddingForm');
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        fetch(`ProductsUrl/${ids}`,{
+            method:"PUT",
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({
+                "id": e.target[0].value,
+                "image":e.target[1].value,
+                "rating":e.target[2].value,
+                "title":e.target[3].value,
+                "description":e.target[4].value,
+                "stock":e.target[5].value,
+                'price':e.target[6].value,
+                "category":e.target[7].value
+            })
+        })
+        alert("Products updated Successfully")
+    })
 }
