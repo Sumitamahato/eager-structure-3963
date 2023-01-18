@@ -26,6 +26,7 @@ nav>h2{
 #mainWindow{
     display: flex;
     justify-content: space-around;
+    height: 100%;
     /* text-align: center; */
 }
 
@@ -38,6 +39,7 @@ nav>h2{
     gap: 15px;
     border-right: 1px solid black;
     padding: 25px;
+    height: 50%;
 }
 
 .menuBtns{
