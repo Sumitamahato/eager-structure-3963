@@ -1,0 +1,208 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 83%;
+    margin:auto;
+}
+/*============================================ Cart Heading ============================================*/
+.cartHeading{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+}
+.cartHeading>*{
+    margin-bottom: 5px;
+    color: green;
+}
+.cartHeading>a:hover{
+    text-decoration: underline;
+}
+.cartHeading>a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*============================================== Cart Items =============================================*/
+.thead{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    margin: 0px 0px 10px 0px;
+    background-color: rgb(243,243,243);
+}
+.trow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+.pickOrDeliv>div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.pickOrDeliv>div>input{
+    width: 20px;
+    margin-right: 5px;
+}
+#freeLabel{
+    display: flex;
+}
+#free{
+    color: green;
+}
+.quantity{
+    display: flex;
+    flex-direction: column;
+}
+.quantity>*{
+    margin-bottom: 6px;
+}
+.quantity>button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.quantity>button{
+    border: none;
+    background-color: transparent;
+    color: green;
+}
+/*========================================= Cart Payment System =========================================*/
+.payment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.descript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paypal{
+    display: flex;
+    margin-top: 200px;
+}
+.paypalBtn>button{
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+}
+.paypalBtn>span{
+    font-size: 12px;
+    margin-left: 40px;
+}
+.ppCheckout:hover{
+    cursor: pointer;
+    background-color: rgb(230, 189, 95);;
+}
+.ppCheckout{
+    background-color: rgb(255,196,57);
+}
+.ppCredit:hover{
+    cursor: pointer;
+    background-color: rgb(5, 71, 192);
+}
+.ppCredit{
+    background-color: rgb(0,48,135);
+}
+.paypalBtn>button>img{
+    width: 160px;
+}
+.bill{
+    margin-top: 20px;
+    width: 320px;
+}
+.promo{
+    padding: 15px;
+    background-color: rgb(237,242,232);
+    margin-bottom: 15px;
+}
+.promo>input{
+    margin-top: 5px;
+    height: 30px;
+    width: 75%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.promo>h4{
+    color: green;
+}
+.promo>button:hover{
+    cursor: pointer;
+    background-color: rgb(33, 110, 218);
+}
+.promo>button{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(30,98,193);
+}
+.orderSummary>p{
+    font-size: 18px;
+    color: green;
+    margin-bottom: 5px;
+}
+.orderSummary>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.orderSummary>div:nth-child(7){
+    margin: 15px 0px 20px 0px;
+}
+.proceedtoCheckout{
+    display: flex;
+}
+.proceedtoCheckout>h4{
+    display: flex;
+    align-items: center;
+}
+.proceedtoCheckout>button:hover{
+    cursor: pointer;
+    background-color: rgb(35, 108, 211);
+}
+.proceedtoCheckout>button{
+    margin-left: 10px;
+    width: 380px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 550;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(30,98,193);
+}
+
+.signUp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 200px;
+}
+.signUp>a:hover{
+    text-decoration: underline;
+}
+.signUp>a{
+    font-size: 18px;
+    font-weight: 550;
+    color: black;
+    text-decoration: none;
+}
+.signUp>button:hover{
+    cursor: pointer;
+}
+.signUp>button{
+    padding: 9px 8px;
+    font-weight: 550;
+    border: none;
+    color: white;
+    background-color: rgb(30,98,193);
+    border-radius: 5px;
+}
