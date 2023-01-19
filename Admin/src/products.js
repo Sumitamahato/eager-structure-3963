@@ -55,7 +55,7 @@ if(flag=="false"){
 }
 
 //Products Api
-let ProductsUrl = "https://testapionbasket.onrender.com/Products";
+let ProductsUrl = "https://63987374fe03352a94d1697f.mockapi.io/Products";
 //Show Products
 let mainDisplayContainer = document.getElementById("mainDisplay");
 let gridDisplayContainer = document.getElementById("gridDisplay");
