@@ -82,7 +82,7 @@
 }
 .paypal{
     display: flex;
-    margin-top: 200px;
+    margin-top: 290px;
 }
 .paypalBtn>button{
     width: 200px;
@@ -184,7 +184,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 40px 200px;
+    margin: 40px 70px;
 }
 .signUp>a:hover{
     text-decoration: underline;
