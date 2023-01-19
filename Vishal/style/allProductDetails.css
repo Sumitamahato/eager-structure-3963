@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "filter product product product";
+}
+
+#navbar {
+    width: 90%;
+    height: 200px;
+    border: 2px solid red;
+    margin: auto;
+    grid-area: nav;
+}
+
+
+/**************Products Page*************/
+#filter{
+    grid-area: filter;
+    border: 2px solid red;
+}
+
+#products{
+    grid-area: product;
+    border: 2px solid red;
+}
+
+#container a{
+    text-decoration: none;
+    color: black;
+}
+
+#productContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    margin: auto;
+    gap: 20px;
+}
+
+#productContainer>div{
+    margin-top: 10px;
+    border: 1px solid#00954c ;
+}
+#productContainer>div>img{
+    width: 100%;
+}
