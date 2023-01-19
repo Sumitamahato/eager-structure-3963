@@ -46,15 +46,58 @@ menuBtn4.addEventListener('click',()=>{
 
 // Logout
 let logout=document.getElementById('logOut');
-let flag=localStorage.getItem('loginStatus')||false;
+let flag=localStorage.getItem('loginStatus')||'false';
 
 
 logout.addEventListener('click',()=>{ 
     location.replace('adminLogin.html');
-    flag=false;
+    flag='false';
     localStorage.setItem('loginStatus',flag);
 })
 
 if(flag=="false"){
     window.location.href="adminLogin.html";
 }
+
+
+// Adding Members
+
+let form=document.querySelector('form');
+let memberData=JSON.parse(localStorage.getItem('registerData')) || [];  
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    if(e.target[0].value && e.target[1].value && e.target[2].value && e.target[3].value){
+        let obj={
+            'name':e.target[0].value,
+            'email':e.target[1].value,
+            'password':e.target[2].value,
+            'department':e.target[3].value
+        }
+        memberData.push(obj);
+        localStorage.setItem('registerData',JSON.stringify(memberData));
+        location.reload(__dirname);
+    }
+})
+
+
+// showing members
+
+function showMembers(data){
+    let card=[];
+    data.forEach((el,i)=>{
+        card.push(`
+        <div  data-id=${i}>
+        <h3>${el.name}</h3>
+        <p>${el.email}</p>
+        <p>${el.department}</p>
+        <button data-id=${i} id="editBtns">Edit</button>
+        <button data-id=${i} id="deleteBtns">Delete</button>
+        </div>
+        `)
+    })
+
+    document.getElementById('membersList').innerHTML=card.join('');
+}
+
+showMembers(memberData);

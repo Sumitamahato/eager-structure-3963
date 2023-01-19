@@ -16,6 +16,7 @@ burger.addEventListener('click',()=>{
         document.getElementById('mainMenu').style.border=0;
         document.getElementById('mainMenu').style.display='none';
         document.getElementById('mainDisplay').style.width='100%';
+        document.getElementById('barchart_material').style.margin="auto";
         burgerC++;
     }else{
         menuBtn1.style.display='block';
@@ -25,6 +26,7 @@ burger.addEventListener('click',()=>{
         document.getElementById('mainMenu').style.borderRight='1px solid black';
         document.getElementById('mainMenu').style.display='grid';
         document.getElementById('mainDisplay').style.width='80%';
+        document.getElementById('barchart_material').style.margin="";
         burgerC--;
     }
 })
@@ -46,11 +48,11 @@ menuBtn4.addEventListener('click',()=>{
 
 // Logout
 let logout=document.getElementById('logOut');
-let flag=localStorage.getItem('loginStatus') || false;
+let flag=localStorage.getItem('loginStatus') || 'false';
 
 logout.addEventListener('click',()=>{ 
     location.replace('adminLogin.html');
-    flag=false;
+    flag='false';
     localStorage.setItem('loginStatus',flag);
 })
 
