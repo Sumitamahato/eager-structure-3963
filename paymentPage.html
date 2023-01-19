@@ -4,9 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>On Basket | Payment</title>
+    <link rel="icon" href="images/logo4Tab.png">
+    <link rel="stylesheet" href="styles/paymentPage.css">
 </head>
 <body>
-    
+    <div class="main">
+        <!--------------------------------------- Payment Heading -------------------------------------------->
+        <div class="paymentHeading">
+            <h2>Shopping Cart</h2>
+            <a href="#"><i class="fa-solid fa-caret-left"></i>Continue Shopping</a>
+        </div>
+        <hr>
+        <!------------------------------------------- Mid Part ----------------------------------------------->
+        <div class="midPart">
+            <!--=====> Left Section <=====-->
+            <div class="leftSection">
+                <div class="requiredEmail">
+                    <label for="registeredEmail">Email Address*<span> (Required for order updates)</span></label>
+                    <input type="text">
+                </div>
+                <div class="address">
+                        <button type="button" class="label">
+                            <p>➊</p>
+                            <p>Pickup Address</p>
+                        </button>
+                        <div class="content">
+                            <p><b>Store</b></p>
+                            <input type="text" placeholder="Sams Shopping Center" readonly>
+                            <p><b>Address Line 1</b></p>
+                            <input type="text" placeholder="C21 Opposite of metro gate no. 1" readonly>
+                            <p><b>Address Line 2</b></p>
+                            <input type="text" placeholder="Laxmi Nagar" readonly>
+                            <p><b>City</b></p>
+                            <input type="text" placeholder="East Delhi" readonly>
+                            <p><b>State</b></p>
+                            <input type="text" placeholder="New Delhi" readonly>
+                            <p><b>PIN Code</b></p>
+                            <input type="text" style="width: 95px;" placeholder="110092" readonly>
+                            <button>SAVE & CONTINUE</button>
+                        </div>
+
+                        <button type="button" class="label">
+                            <p>❷</p>
+                            <p>Billing Address</p>
+                        </button>
+                        <div class="content">
+                            <p><b>First Name</b></p>
+                            <input type="text">
+                            <p><b>Last Name</b></p>
+                            <input type="text">
+                            <p><b>Address Line 1</b></p>
+                            <input type="text">
+                            <p><b>Address Line 2</b></p>
+                            <input type="text">
+                            <p><b>City</b></p>
+                            <input type="text">
+                            <p><b>State</b></p>
+                            <input type="text">
+                            <p><b>PIN Code</b></p>
+                            <input type="text" style="width: 95px;">
+                            <p><b>Phone Number</b></p>
+                            <input type="text">
+                            <button>SAVE & CONTINUE</button>
+                        </div>
+
+                        <button type="button" class="label">
+                            <p>❸</p>
+                            <p>Payment</p>
+                        </button>
+                        <div class="content">
+                            <div class="paypal">
+                                <div class="paypalBtn">
+                                    <button class="ppCheckout">
+                                        <img src="images/paypal1.png" alt=""><span></span>
+                                    </button>
+                                    <br>
+                                    <span>A safer, faster way to pay.</span>
+                                </div>
+                                <div class="paypalBtn">
+                                    <button class="ppCredit">
+                                        <img src="images/paypal2.png" alt="">
+                                    </button>
+                                    <br>
+                                    <span>Buy Now. Pay Over Time.</span>
+                                </div>
+                            </div>
+                            <p style="margin: 15px;"><b>or</b></p>
+                                <p><b>Name on Card</b></p>
+                                <input type="text">
+                                <p><b>Card Number</b></p>
+                                <input type="text">
+                                <p><b>CVV</b></p>
+                                <input type="text">
+                                <div class="cvv">
+                                    <div>
+                                        <p><b>Expires (Month)</b></p>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <p><b>Expires (Year)</b></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            <p>By clicking "Place Order" you are agreeing to our <a href="#">Terms & Conditions</a>.</p>
+                            <br>
+                            <p style="margin-bottom: 15px;">Please make note of your Estimated Arrival/Pickup date(s). <b>All <br> sales are final</b>All sales are final and your order cannot be <br> cancelled or modified once it has been placed.</p>
+                            <button>PLACE ORDER</button>
+                        </div>
+                </div>
+            </div>
+            <!--=====> Right Section <=====-->
+            <div class="rightSection">
+                <div class="orderSummary">
+                    <p style="color: green; font-size: 20px;">Order Summary</p>
+                    <div id="editCart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Edit Cart</p>
+                    </div>
+                </div>
+                <div class="paymentDetails">
+                    <div class="bill">
+                        <div class="promo">
+                            <h4>Add Promo Code</h4>
+                            <input type="text">
+                            <button>Update</button>
+                        </div>
+                        <div class="orderSummaryy">
+                            <p>Order Summary</p>
+                            <hr>
+                            <div>
+                                <p>Items In Your Cart:</p>
+                                <p class="itemInCart"><span>₹</span>45.00</p>
+                            </div>
+                            <div>
+                                <p>Shipping:</p>
+                                <p class="shipping"><span>₹</span>-</p>
+                            </div>
+                            <div>
+                                <p>Estimated Tax:</p>
+                                <p class="tax"><span>₹</span>2.70</p>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>ESTIMATED ORDER TOTAL:</p>
+                                <p class="total"><span>₹</span>47.70</p>
+                            </div>
+                        </div>
+                        <div class="proceedtoCheckout">
+                            <button>PROCEED TO CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/paymentPage.js"></script>
 </body>
 </html>

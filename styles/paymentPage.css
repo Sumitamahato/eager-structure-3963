@@ -1,0 +1,196 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Popins', sans-serif;
+}
+.main{
+    width: 83%;
+    margin:auto;
+}
+.paymentHeading{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+}
+.paymentHeading>*{
+    margin-bottom: 5px;
+    color: green;
+}
+.paymentHeading>a:hover{
+    text-decoration: underline;
+}
+.paymentHeading>a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.midPart{
+    display: flex;
+}
+.leftSection{
+    width: 65%;
+}
+.rightSection{
+    width: 35%;
+}
+.requiredEmail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.requiredEmail>input{
+    width: 350px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0px 20px;
+}
+
+.label{
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .label:hover {
+    background-color: rgb(0, 255, 128);
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  
+.paypal{
+    display: flex;
+    margin-bottom: 10px;
+}
+.paypalBtn>button{
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+}
+.paypalBtn>span{
+    font-size: 12px;
+    margin-left: 40px;
+}
+.ppCheckout:hover{
+    cursor: pointer;
+    background-color: rgb(230, 189, 95);;
+}
+.ppCheckout{
+    background-color: rgb(255,196,57);
+}
+.ppCredit:hover{
+    cursor: pointer;
+    background-color: rgb(5, 71, 192);
+}
+.ppCredit{
+    background-color: rgb(0,48,135);
+}
+.paypalBtn>button>img{
+    width: 160px;
+}
+.cvv{
+    display: flex;
+    margin-bottom: 20px;
+}
+.cvv>div>input{
+    width: 90px;
+    height: 35px;
+    padding: 5px;
+    font-weight: 550;
+    border-radius: 5px;
+    margin: 10px 0px 20px;
+}
+.cvv>div{
+    margin-right: 50px;
+}
+
+
+.orderSummary{
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.orderSummary>div{
+    width: 20%;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.bill{
+    margin-top: 20px;
+    width: 35%px;
+}
+.promo{
+    padding: 15px;
+    background-color: rgb(237,242,232);
+    margin-bottom: 15px;
+}
+.promo>input{
+    margin-top: 5px;
+    height: 40px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.promo>h4{
+    color: green;
+}
+.promo>button:hover{
+    cursor: pointer;
+    background-color: rgb(33, 110, 218);
+}
+.promo>button{
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(30,98,193);
+}
+.orderSummaryy>p{
+    font-size: 20px;
+    color: green;
+    margin-bottom: 10px;
+}
+.orderSummaryy>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.orderSummaryy>div:nth-child(7){
+    margin: 15px 0px 20px 0px;
+}
+.proceedtoCheckout{
+    display: flex;
+}
+.proceedtoCheckout>button:hover{
+    cursor: pointer;
+    background-color: rgb(35, 108, 211);
+}
+.proceedtoCheckout>button{
+    margin-left: 25px;
+    width: 380px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 550;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(30,98,193);
+}
