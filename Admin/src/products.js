@@ -161,13 +161,13 @@ addProdButton.addEventListener("click", async () => {
     let addCatg = addCatgInput.value;
 
     let addObj = {
-      image: addImg,
-      rating: addRate,
-      title: addTitle,
-      description: addDesc,
-      stock: addStock,
-      price: addPrice,
-      category: addCatg,
+      "image": addImg,
+      "rating": addRate,
+      "title": addTitle,
+      "description": addDesc,
+      "stock": addStock,
+      "price": addPrice,
+      "category": addCatg,
     };
     addprod(addObj);
   });
@@ -195,45 +195,6 @@ async function addprod(addObj) {
   }
 }
 
-// function addProductCard(){
-//     gridDisplayContainer.innerHTML = null;
-
-//     gridDisplayContainer.innerHTML=`
-//     <form action="" id="productAddingForm">
-//         <h2>ADD PRODUCT 🛍️</h2>
-//         <input type="text" name="img" placeholder="Image Url" id="">
-//         <input type="number" name="rate" placeholder="Rating" id="">
-//         <input type="text" name="title" placeholder="Title" id="">
-//         <input type="text" name="desc" placeholder="Description" id="">
-//         <input type="number" name="stock" placeholder="Stock" id="">
-//         <input type="number" name="price" placeholder="Price" id="">
-//         <input type="text" name="category" placeholder="Category" id=""><br/>
-//         <input type="submit" id="submitButton" value="Submit">
-//     </form>
-//     `
-
-//     let form=document.getElementById('productAddingForm');
-
-//     form.addEventListener("submit",(e)=>{
-//         e.preventDefault();
-//         fetch(ProductsUrl,{
-//             method:"POST",
-//             headers:{
-//                 'Content-Type':'application/json'
-//             },
-//             body:JSON.stringify({
-//                 "image":e.target[0].value,
-//                 "rating":e.target[1].value,
-//                 "title":e.target[2].value,
-//                 "description":e.target[3].value,
-//                 "stock":e.target[4].value,
-//                 'price':e.target[5].value,
-//                 "category":e.target[6].value
-//             })
-//         })
-//         alert("Products added Successfully")
-//     })
-// }
 
 //Update Products
 function val() {
@@ -271,14 +232,14 @@ editProdButton.addEventListener("click", () => {
     let upCatg = updateCatgInput.value;
 
       let obj = {
-        id: upId,
-        image: upImg,
-        rating: upRate,
-        title: upTitle,
-        description: upDesc,
-        stock: upStock,
-        price: upPrice,
-        category: upCatg,
+        "id": upId,
+        "image": upImg,
+        "rating": upRate,
+        "title": upTitle,
+        "description": upDesc,
+        "stock": upStock,
+        "price": upPrice,
+        "category": upCatg,
       };
       editprod(obj);
 });
