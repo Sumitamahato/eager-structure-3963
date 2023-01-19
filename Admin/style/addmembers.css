@@ -78,7 +78,34 @@ nav>h2{
 }
 
 /* Members List */
-#membersList div{
-    display: grid;
-    grid-template-columns: repeat(5,20%);
+table{
+    width: 80%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+td{
+    border: 1px solid rgb(219, 217, 217);
+}
+
+#addForm input{
+    padding-left: 10px;
+}
+thead{
+    background-color: #795548 ;
+    color: white;
+}
+
+.deleteBtns,
+.editBtns{
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: #D7CCC8;
+}
+
+.deleteBtns:hover,
+.editBtns:hover{
+    background-color: #BCAAA4;
 }

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
+    <!-- logo -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
     <title>Add Members</title>
 </head>
 <body>
@@ -37,18 +40,33 @@
         <!-- Main Display -->
         <div id="mainDisplay">
             <!-- Our Code -->
-                <form action="">
+            <h3>Register New Members:</h3>
+                <form action="" id="addForm">
                     <input type="text" name="" id="" placeholder="Name" required>
-                    <input type="email" name="" id="" placeholder="email" required>
-                    <input type="password" name="" id="" placeholder="password" required>
+                    <input type="email" name="" id="" placeholder="Email" required>
+                    <input type="password" name="" id="" placeholder="Password" required>
                     <input type="text" name="" id="" placeholder="Department" required>
                     <input type="submit" value="Register">
                 </form>
                 <div id="membersList">
-                    <h1>Members List</h1>
+                    <h1>Members List:</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Department</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
                 </div>
         </div>
     </div>
 </body>
 <script src="src/addmembers.js"></script>
 </html>
+
+

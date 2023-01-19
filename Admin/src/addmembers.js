@@ -16,6 +16,10 @@ burger.addEventListener('click',()=>{
         document.getElementById('mainMenu').style.border=0;
         document.getElementById('mainMenu').style.display='none';
         document.getElementById('mainDisplay').style.width='100%';
+        document.querySelector('table').style.margin='auto';
+        document.getElementById('addForm').style.textAlign='center';
+        document.querySelector('#mainDisplay>h3').style.textAlign='center';
+        document.querySelector('#membersList>h1').style.textAlign='center';
         burgerC++;
     }else{
         menuBtn1.style.display='block';
@@ -25,6 +29,10 @@ burger.addEventListener('click',()=>{
         document.getElementById('mainMenu').style.borderRight='1px solid black';
         document.getElementById('mainMenu').style.display='grid';
         document.getElementById('mainDisplay').style.width='80%';
+        document.querySelector('table').style.margin='';
+        document.getElementById('addForm').style.textAlign='left';
+        document.querySelector('#mainDisplay>h3').style.textAlign='left';
+        document.querySelector('#membersList>h1').style.textAlign='left';
         burgerC--;
     }
 })
@@ -76,7 +84,13 @@ form.addEventListener('submit',(e)=>{
         }
         memberData.push(obj);
         localStorage.setItem('registerData',JSON.stringify(memberData));
-        location.reload(__dirname);
+        showMembers(memberData)
+
+        
+        e.target[0].value='';
+        e.target[1].value='';
+        e.target[2].value='';
+        e.target[3].value='';
     }
 })
 
@@ -84,20 +98,63 @@ form.addEventListener('submit',(e)=>{
 // showing members
 
 function showMembers(data){
+    document.querySelector('tbody').innerHTML=null;
+
     let card=[];
     data.forEach((el,i)=>{
         card.push(`
-        <div  data-id=${i}>
-        <h3>${el.name}</h3>
-        <p>${el.email}</p>
-        <p>${el.department}</p>
-        <button data-id=${i} id="editBtns">Edit</button>
-        <button data-id=${i} id="deleteBtns">Delete</button>
-        </div>
+        <tr data-id=${i}>
+        <td>${el.name}</td>
+        <td>${el.email}</td>
+        <td>${el.department}</td>
+        <td><button data-id=${i} class="editBtns">Edit</button></td>
+        <td><button  data-id=${i} class="deleteBtns">Delete</button></td>
+        </tr>      
         `)
     })
 
-    document.getElementById('membersList').innerHTML=card.join('');
+    document.querySelector('tbody').innerHTML=card.join('');
+
+    //Edit button
+    let editBtns=document.querySelectorAll('.editBtns');
+    
+    editBtns.forEach((el,id)=>{
+        el.addEventListener('click',(e)=>{
+            let edit=data.filter((element,index)=>{
+                if(e.target.dataset.id==index){
+                    document.querySelector('form>input:nth-child(1)').value=element.name;
+                    document.querySelector('form>input:nth-child(2)').value=element.email;
+                    document.querySelector('form>input:nth-child(3)').value=element.password;
+                    document.querySelector('form>input:nth-child(4)').value=element.department;
+                    return false;
+                }else{
+                    return true;
+                }
+            })
+            memberData=edit;
+            localStorage.setItem('registerData',JSON.stringify(memberData));
+            showMembers(memberData)
+        })
+    })
+
+
+    // Delete Button
+    let deleteBtns=document.querySelectorAll('.deleteBtns');
+
+    deleteBtns.forEach((el,id)=>{
+        el.addEventListener('click',(e)=>{
+            let deleted=data.filter((element,index)=>{
+                if(e.target.dataset.id==index){
+                    return false;
+                }else{
+                    return true;
+                }
+            })
+            memberData=deleted;
+            localStorage.setItem('registerData',JSON.stringify(memberData));
+            showMembers(memberData);
+        })
+    })
 }
 
 showMembers(memberData);
