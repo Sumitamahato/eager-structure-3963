@@ -58,9 +58,8 @@ nav>h2{
     margin-top: 15px;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    border: 1px solid red;   
+    gap:  20px 6px;
+    /* border: 1px solid red;    */
  }
 
  #gridDisplay > div {
@@ -68,41 +67,132 @@ nav>h2{
     text-align: left;
     /* width: 250px; */
     height: 450px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(23, 241, 8, 0.3) 2px 2px 2px 2px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 15px;
     padding: 15px;
     padding-bottom: 20px;
+    box-shadow: rgb(24, 222, 27);
   }
   img{
     width: 100%;
+    /* height: 50%; */
   }
 
+  /* Adding Form */
+#productAddingForm{
+  width: 350px;
+  /* height: 460px; */
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 20px;
+  text-align: center;
+  /* margin: 50px 0 0 400px; */
+  margin: 15% 90%;
+  box-shadow: rgba(8, 240, 43, 0.3) 0px 1px 2px 0px, rgba(10, 238, 21, 0.233) 0px 2px 6px 2px;
+  }
+
+#productAddingForm > input,select,label {
+  width: 60%;  
+  height: 30px;
+  margin: 5px 0px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid rgb(206, 206, 206);
+}
+#productAddingForm > input:focus{
+  outline: 1px solid rgb(2, 250, 2);
+  border: 0;
+}
+#productAddingForm > #submitButton{
+    width: 80%;
+    height: 40px;
+    margin: 15px 0;
+    background-color: rgb(51, 171, 53);
+    color: white;
+    font-size: 18px;
+    border: 1px solid rgb(206, 206, 206);
+}
+#productAddingForm > #submitButton:hover{
+    background-color: rgb(24, 222, 27);
+    border: 2px solid rgb(168, 148, 148);
+    cursor: pointer;
+}
+
+/* Updating Products */
+#gridDisplay > #updatingProducts{
+    width: 360px;
+    /* height: 460px; */
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 20px;
+    text-align: center;
+    margin: 12% 90%;
+    box-shadow: rgba(8, 240, 43, 0.3) 0px 1px 2px 0px, rgba(10, 238, 21, 0.233) 0px 2px 6px 2px;
+    }
+  
+#gridDisplay > #updatingProducts > input,select,label {
+    width: 60%;  
+    height: 30px;
+    margin: 5px 0px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: 1px solid rgb(206, 206, 206);
+  }
+  #gridDisplay > #updatingProducts > input:focus{
+    outline: 1px solid rgb(2, 250, 2);
+    border: 0;
+  }
+  #gridDisplay > #updatingProducts > #submitButton{
+      width: 40%;
+      height: 40px;
+      margin: 15px 0;
+      background-color: rgb(51, 171, 53);
+      color: white;
+      font-size: 18px;
+      border: 1px solid rgb(206, 206, 206);
+  }
+  #gridDisplay > #updatingProducts > #submitButton:hover{
+      background-color: rgb(24, 222, 27);
+      border: 2px solid rgb(168, 148, 148);
+      cursor: pointer;
+}
     /* Media Query */
-  @media (min-width: 200px) {
+  @media (min-width: 500px) {
     #gridDisplay{
         grid-template-columns: repeat(1,1fr);  
      }
      #gridDisplay > div {
+        width: 70%;
         height: auto;
-      }
+    }
+    #gridDisplay > .addProduct{
+        margin-left: 10%;
+    }  
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     #gridDisplay{
         grid-template-columns: repeat(2,1fr);  
-     }
-     #gridDisplay > div {
+    }
+    #gridDisplay > div {
+        width: 90%;
         height: auto;
-      }
+    }
+    #gridDisplay > .addProduct{
+        margin-left: 150px;
+    } 
   }
   
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     #gridDisplay{
-        grid-template-columns: repeat(4,1fr);  
-     }
-     #gridDisplay > div {
-        height: 440px;
+        grid-template-columns: repeat(3,33%); 
+    }
+    #gridDisplay > div {
+        height: 620px;
       }
+    #gridDisplay > .addProduct{
+        margin-left: 130%;
+    } 
   }
   
 /* Logout */
