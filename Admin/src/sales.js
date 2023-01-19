@@ -58,3 +58,31 @@ logout.addEventListener('click',()=>{
 if(flag=="false"){
     window.location.href="adminLogin.html";
 }
+
+// Google charts
+
+
+google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2020', 1000, 400, 200],
+          ['2021', 1170, 460, 250],
+          ['2022', 660, 1120, 300],
+          ['2023', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2020-2023',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }

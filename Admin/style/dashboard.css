@@ -59,3 +59,45 @@ nav>h2{
     cursor: pointer;
     margin-right: 50px;
 }
+
+/* Chart Details */
+
+#top_x_div{
+    margin-top: 75px;
+}
+
+#donutchart{
+    margin-top: 75px;
+}
+
+#mainCharts{
+    display: flex;
+}
+
+/* Dashboard Options */
+
+#mainDisplay button{
+    border: 0;
+    height: 55px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 10px;
+    font-size: 100%;
+    padding: 5px;
+    font-weight: 550;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+}
+
+#mainDisplay>button:nth-child(1){
+    background-color: #49a4ff;
+}
+#mainDisplay>button:nth-child(2){
+    background-color: #81C784;
+}
+#mainDisplay>button:nth-child(3){
+    background-color: #FF8A65;
+}
+#mainDisplay>button:nth-child(4){
+    background-color: #78909C;
+}
