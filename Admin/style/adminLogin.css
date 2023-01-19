@@ -1,0 +1,39 @@
+form>input{
+    padding: 15px;
+    border-radius: 0;
+    border-radius: 5px;
+    border: 0.5px solid rgb(168, 167, 167);
+}
+
+#loginDiv{
+    width: 15%;
+    margin: auto;
+    margin-top: 75px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 75px;
+    padding-top: 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+#LoginForm{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+    width: 100%;
+}
+img{
+    width: 100%;
+    /* background-color: aliceblue; */
+}
+body{
+    background-color: #388E3C;
+}
+
+form>input:last-child{
+    border: 0;
+    background-color: #66BB6A;
+    color: white;
+}
+form>input:last-child:hover{
+    background-color: #43A047;
+}

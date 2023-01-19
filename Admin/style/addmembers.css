@@ -82,9 +82,16 @@ table{
     width: 80%;
     text-align: center;
     /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 td{
     border: 1px solid rgb(219, 217, 217);
+    /* border: none; */
+}
+th{
+    height: 50px;
 }
 
 #addForm input{
