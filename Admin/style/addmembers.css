@@ -82,16 +82,23 @@ table{
     width: 80%;
     text-align: center;
     /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 td{
     border: 1px solid rgb(219, 217, 217);
+    /* border: none; */
+}
+th{
+    height: 50px;
 }
 
 #addForm input{
-    padding-left: 10px;
+    padding: 10px;
 }
 thead{
-    background-color: #795548 ;
+    background-color: #80CBC4;
     color: white;
 }
 
@@ -102,10 +109,32 @@ thead{
     margin: 0;
     padding: 0;
     height: 50px;
-    background-color: #D7CCC8;
+    font-weight: 550;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.deleteBtns:hover,
+.editBtns{
+    background-color: #97b6c6;
+    color: white;
+}
 .editBtns:hover{
-    background-color: #BCAAA4;
+    background-color: gainsboro;
+    color: black;
+}
+.deleteBtns{
+    background-color: #EF9A9A;
+    color: white;
+}
+.deleteBtns:hover{
+    background-color: #E57373;
+}
+
+#addForm>input:last-child{
+    background-color: #4DB6AC;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+#addForm>input:last-child:hover{
+    background-color: #80CBC4;
 }
