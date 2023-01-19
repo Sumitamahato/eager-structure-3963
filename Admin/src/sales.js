@@ -16,6 +16,7 @@ burger.addEventListener('click',()=>{
         document.getElementById('mainMenu').style.border=0;
         document.getElementById('mainMenu').style.display='none';
         document.getElementById('mainDisplay').style.width='100%';
+        document.getElementById('barchart_material').style.margin="auto";
         burgerC++;
     }else{
         menuBtn1.style.display='block';
@@ -25,6 +26,7 @@ burger.addEventListener('click',()=>{
         document.getElementById('mainMenu').style.borderRight='1px solid black';
         document.getElementById('mainMenu').style.display='grid';
         document.getElementById('mainDisplay').style.width='80%';
+        document.getElementById('barchart_material').style.margin="";
         burgerC--;
     }
 })
@@ -46,11 +48,11 @@ menuBtn4.addEventListener('click',()=>{
 
 // Logout
 let logout=document.getElementById('logOut');
-let flag=localStorage.getItem('loginStatus') || false;
+let flag=localStorage.getItem('loginStatus') || 'false';
 
 logout.addEventListener('click',()=>{ 
     location.replace('adminLogin.html');
-    flag=false;
+    flag='false';
     localStorage.setItem('loginStatus',flag);
 })
 
@@ -58,3 +60,31 @@ logout.addEventListener('click',()=>{
 if(flag=="false"){
     window.location.href="adminLogin.html";
 }
+
+// Google charts
+
+
+google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2020', 1000, 400, 200],
+          ['2021', 1170, 460, 250],
+          ['2022', 660, 1120, 300],
+          ['2023', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2020-2023',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }

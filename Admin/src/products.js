@@ -43,19 +43,20 @@ menuBtn4.addEventListener("click", () => {
 });
 
 // Logout
-let logout = document.getElementById("logOut");
-let flag = localStorage.getItem("loginStatus") || false;
-logout.addEventListener("click", () => {
-  location.replace("adminLogin.html");
-  flag = false;
-  localStorage.setItem("loginStatus", flag);
-});
-if (flag == "false") {
-  location.replace("adminLogin.html");
+
+let logout=document.getElementById('logOut');
+let flag=localStorage.getItem('loginStatus') || "false";
+logout.addEventListener('click',()=>{ 
+    location.replace('adminLogin.html');
+    flag="false";
+    localStorage.setItem('loginStatus',flag);
+})
+if(flag=="false"){
+    location.replace('adminLogin.html');
 }
 
 //Products Api
-let ProductsUrl = "https://testapionbasket.onrender.com/Products";
+let ProductsUrl = "https://63987374fe03352a94d1697f.mockapi.io/Products";
 //Show Products
 let mainDisplayContainer = document.getElementById("mainDisplay");
 let gridDisplayContainer = document.getElementById("gridDisplay");
