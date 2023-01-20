@@ -1,0 +1,48 @@
+#navbar{
+    width: 100%;
+    border: 1px solid red;
+}
+#productSingle{
+    width: 100%;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "img title title"
+    "desc desc desc "
+    ;
+}
+#productSingle>#productImg{
+    /* background-color: burlywood; */
+    height: 300px;
+    border: 1px solid ;
+    grid-area: img;
+    margin-left: 30%;
+    margin-right: 20%;
+    
+}
+#productImg img{
+    width: 100%;
+}
+#productSingle>#productTitle{
+    /* background-color: aqua; */
+    height: 300px;
+    border: 1px solid ;
+    grid-area: title;
+    margin-right: 20%;
+}
+#productSingle>#productDesc{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    border: 1px solid ;
+    grid-area: desc;
+    
+}
+#fotter{
+    width: 100%;
+    border: 1px solid red;
+    height: 300px;
+}
+
