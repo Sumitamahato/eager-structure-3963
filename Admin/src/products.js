@@ -106,7 +106,7 @@ function showProdCard(data) {
     price.innerText = "Price: " + el.price;
 
     let tr3 = document.createElement("div");
-    tr2.setAttribute("class","delDiv")
+    tr3.setAttribute("class","delDiv")
 
     let deleteBtn = document.createElement("h4");
     deleteBtn.innerText = "Delete";
@@ -135,7 +135,7 @@ showProdButton.addEventListener("click", () => {
 // let fetchMe=0;
 async function fetchData(n) {
   try {
-    let res = await fetch(`${ProductsUrl}?limit=9&page=${n}`);
+    let res = await fetch(`${ProductsUrl}?limit=12&page=${n}`);
     let data = await res.json();
     mainData = data;
     showProdCard(data);
@@ -351,7 +351,7 @@ function fetchDetails(){
   .then((res)=> res.json())
   .then((data)=>{
     let totalCount = data.length
-    let totalPages = Math.ceil(totalCount/9)
+    let totalPages = Math.ceil(totalCount/12)
     renderPagination(totalPages)
   })
 }
