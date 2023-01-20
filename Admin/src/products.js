@@ -66,10 +66,13 @@ let showProdButton = document.getElementById("showProd");
 let addProdButton = document.getElementById("addProd");
 let editProdButton = document.getElementById("editProd");
 
-let mainData = [];
-let data_Length;
+//Pagination Buttons
+let paginationWrapper = document.getElementById("pagination-wrapper");
 
-//Product Cards
+let mainData = [];
+let dLength=0;
+
+//get Product Function
 function showProdCard(data) {
   gridDisplayContainer.innerHTML = null;
   data.forEach((el,ind) => {
@@ -77,6 +80,9 @@ function showProdCard(data) {
 
     let id = document.createElement("p");
     id.innerText = el.id;
+
+    let tr2 = document.createElement("div");
+    tr2.setAttribute("id","imgDiv");
 
     let image = document.createElement("img");
     image.setAttribute("src", el.image);
@@ -99,8 +105,8 @@ function showProdCard(data) {
     let price = document.createElement("h4");
     price.innerText = "Price: " + el.price;
 
-    let tr2 = document.createElement("div");
-    tr2.setAttribute("class","delDiv")
+    let tr3 = document.createElement("div");
+    tr3.setAttribute("class","delDiv")
 
     let deleteBtn = document.createElement("h4");
     deleteBtn.innerText = "Delete";
@@ -113,28 +119,30 @@ function showProdCard(data) {
       }
     })
 
-    tr2.append(deleteBtn);
-    tr.append(image, title, description, category, rating, stock, price, tr2);
+    tr2.append(image)
+    tr3.append(deleteBtn);
+    tr.append(tr2, title, description, category, rating, stock, price, tr3);
     gridDisplayContainer.append(tr);
   });
 }
 
-//Show product button
+//GET product button
 showProdButton.addEventListener("click", () => {
-  fetchData();
+  fetchData(1);
 });
 
-// Fetching Data
-let fetchMe=0;
-async function fetchData() {
+// GET Method
+// let fetchMe=0;
+async function fetchData(n) {
   try {
-    let res = await fetch(ProductsUrl);
+    let res = await fetch(`${ProductsUrl}?limit=12&page=${n}`);
     let data = await res.json();
     mainData = data;
     showProdCard(data);
     // console.log(data)
-    data_Length = data.length;
-    fetchMe == 0 ? alert("Available Products") :'';
+    // paginationPages(data.length)
+    fetchDetails()
+    // fetchMe == 0 ? alert("Available Products") :'';
     
   } catch (error) {
     alert("Products not available");
@@ -142,7 +150,7 @@ async function fetchData() {
   }
 }
 
-// Method 2
+// Method 2 for fetching data
 // function fetchData(){
 //     fetch(ProductsUrl)
 //     .then((res)=> res.json())
@@ -152,7 +160,8 @@ async function fetchData() {
 //     })
 // }
 
-//Add product Button
+
+//Add Product function
 function value() {
   gridDisplayContainer.innerHTML = "";
   gridDisplayContainer.innerHTML = `
@@ -170,8 +179,15 @@ function value() {
   `;
 }
 
+// Add Button
 addProdButton.addEventListener("click", async () => {
   value();
+
+  let hideBtn = document.querySelectorAll(".pagination-button");
+
+  for(let i=0;i<hideBtn.length;i++){
+    hideBtn[i].style.display = "none";
+  }
 
   let forms = document.querySelector("form");
   forms.addEventListener("submit", (e) => {
@@ -197,6 +213,7 @@ addProdButton.addEventListener("click", async () => {
   });
 });
 
+// POST Method
 async function addprod(addObj) {
   try {
     let res = await fetch(ProductsUrl, {
@@ -220,7 +237,7 @@ async function addprod(addObj) {
 }
 
 
-//Update Products
+//Edit Product function
 function val() {
   gridDisplayContainer.innerHTML = "";
   gridDisplayContainer.innerHTML = `
@@ -239,6 +256,7 @@ function val() {
     `;
 }
 
+// Edit Button
 editProdButton.addEventListener("click", () => {
   val();
   let forms = document.querySelector("form");
@@ -268,6 +286,7 @@ editProdButton.addEventListener("click", () => {
 });
 });
 
+//PUT Method
 async function editprod(obj) {
   try {
     let res = await fetch(
@@ -297,8 +316,7 @@ async function editprod(obj) {
 }
 
 
-//Delete Products
-
+//Delete Product function
 async function deleteProd(obj){
   try {
     let res = await fetch(
@@ -327,6 +345,44 @@ async function deleteProd(obj){
 }
 
 
-//Pagination
+// Pagination
+function fetchDetails(){
+  fetch(ProductsUrl)
+  .then((res)=> res.json())
+  .then((data)=>{
+    let totalCount = data.length
+    let totalPages = Math.ceil(totalCount/12)
+    renderPagination(totalPages)
+  })
+}
 
-// function pagination()
+// Rendering Pagination Buttons
+function renderPagination(numOfPages){
+
+  function listOfButtons(){
+    let arr = [];
+    for(let i = 1;i <=numOfPages; i++){
+      arr.push(getPaginationButtons(i));
+    }
+    return arr.join(" ");
+  }
+
+  paginationWrapper.innerHTML = `
+    <div>
+      ${listOfButtons()}
+    </div>
+  `
+
+  let pageButtons = document.querySelectorAll(".pagination-button");
+  for(let btn of pageButtons){
+      btn.addEventListener("click",(e)=>{
+        fetchData(e.target.dataset.id);
+      })
+  }
+
+}
+
+// Creating Pagination Buttons
+function getPaginationButtons(pageNumber){
+  return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
+}
