@@ -65,44 +65,18 @@ let gridDisplayContainer = document.getElementById("gridDisplay");
 let showProdButton = document.getElementById("showProd");
 let addProdButton = document.getElementById("addProd");
 let editProdButton = document.getElementById("editProd");
-let delProdButton = document.getElementById("delProd");
 
 let mainData = [];
+let data_Length;
 
-//Show product button
-showProdButton.addEventListener("click", () => {
-  fetchData();
-});
-
-// Fetching Data
-async function fetchData() {
-  try {
-    let res = await fetch(ProductsUrl);
-    let data = await res.json();
-    mainData = data;
-    showProdCard(data);
-    console.log(data)
-    // alert("Products Available")
-  } catch (error) {
-    alert("Products not available");
-    // console.log("Products not available")
-  }
-}
-
-// Method 2
-// function fetchData(){
-//     fetch(ProductsUrl)
-//     .then((res)=> res.json())
-//     .then((data)=>{
-//         console.log(data)
-//         showProdCard(data)
-//     })
-// }
-
+//Product Cards
 function showProdCard(data) {
   gridDisplayContainer.innerHTML = null;
-  data.forEach((el) => {
+  data.forEach((el,ind) => {
     let tr = document.createElement("div");
+
+    let id = document.createElement("p");
+    id.innerText = el.id;
 
     let image = document.createElement("img");
     image.setAttribute("src", el.image);
@@ -125,10 +99,58 @@ function showProdCard(data) {
     let price = document.createElement("h4");
     price.innerText = "Price: " + el.price;
 
-    tr.append(image, title, description, category, rating, stock, price);
+    let tr2 = document.createElement("div");
+    tr2.setAttribute("class","delDiv")
+
+    let deleteBtn = document.createElement("h4");
+    deleteBtn.innerText = "Delete";
+    deleteBtn.setAttribute("class","delbtn");
+    deleteBtn.setAttribute("data-id",el.id);
+
+    deleteBtn.addEventListener("click",(e)=> {
+      if(el.id == e.target.dataset.id){
+        deleteProd(el.id);
+      }
+    })
+
+    tr2.append(deleteBtn);
+    tr.append(image, title, description, category, rating, stock, price, tr2);
     gridDisplayContainer.append(tr);
   });
 }
+
+//Show product button
+showProdButton.addEventListener("click", () => {
+  fetchData();
+});
+
+// Fetching Data
+let fetchMe=0;
+async function fetchData() {
+  try {
+    let res = await fetch(ProductsUrl);
+    let data = await res.json();
+    mainData = data;
+    showProdCard(data);
+    // console.log(data)
+    data_Length = data.length;
+    fetchMe == 0 ? alert("Available Products") :'';
+    
+  } catch (error) {
+    alert("Products not available");
+    // console.log("Products not available")
+  }
+}
+
+// Method 2
+// function fetchData(){
+//     fetch(ProductsUrl)
+//     .then((res)=> res.json())
+//     .then((data)=>{
+//         console.log(data)
+//         showProdCard(data)
+//     })
+// }
 
 //Add product Button
 function value() {
@@ -147,6 +169,7 @@ function value() {
       <form>
   `;
 }
+
 addProdButton.addEventListener("click", async () => {
   value();
 
@@ -212,7 +235,6 @@ function val() {
             <input type="number" name="price" placeholder="Price" id="updatePriceInput">
             <input type="text" name="category" placeholder="Category" id="updateCatgInput"><br/>
             <input type="submit" id="submitButton" value="Edit">
-            <input type="submit" id="submitButton" value="Delete">
         <form>
     `;
 }
@@ -259,15 +281,52 @@ async function editprod(obj) {
       }
     );
 
-    let data = await res.json();
-    console.log(data);
+    // let data = await res.json();
+    console.log(res);
 
     if (res.ok == true) {
       alert("Updated Successfully");
     } else {
-      alert("Something went Wrong");
+      alert("Id not found, Product added successfully");
+      let new_Post=obj;
+      addprod(new_Post);
     }
   } catch (error) {
     alert("Wrong input");
   }
 }
+
+
+//Delete Products
+
+async function deleteProd(obj){
+  try {
+    let res = await fetch(
+      `https://63987374fe03352a94d1697f.mockapi.io/Products/${obj}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      }
+    );
+
+    let data = await res.json();
+    // console.log(data);
+
+    if (res.ok == true) {
+      alert("Product Deleted Successfully");
+      fetchMe++;
+      fetchData();
+    } else {
+      alert("Something went Wrong");
+    }
+  } catch (error) {
+    alert("Product cannot be deleted");
+  }
+}
+
+
+//Pagination
+
+// function pagination()
