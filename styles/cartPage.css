@@ -34,7 +34,7 @@
     background-color: rgb(243,243,243);
 }
 .thead>p:nth-child(2){
-    margin-left: 620px;
+    margin-left: 550px;
 }
 .trow{
     display: flex;
@@ -58,6 +58,12 @@
 .pickOrDeliv>div>input{
     width: 20px;
     margin-right: 5px;
+}
+.quantityy>button{
+    border: none;
+    background: none;
+    color: green;
+    cursor: pointer;
 }
 #freeLabel{
     display: flex;

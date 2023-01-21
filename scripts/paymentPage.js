@@ -12,3 +12,16 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+let total=JSON.parse(localStorage.getItem("totalSum"));
+
+let itemInYourCart=document.querySelector(".itemInCart");
+let estTotal=document.querySelector(".total");
+estTotal.innerHTML=`$${total}`
+itemInYourCart.innerHTML=`$${total}`
+
+
+let placeOrder=document.querySelector("proceedtoCheckout>button");
+placeOrder.addEventListener("click",function(){
+    window.location.href="placed.html";
+})
