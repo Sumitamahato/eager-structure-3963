@@ -1,5 +1,4 @@
-// let url = "https://63987374fe03352a94d1697f.mockapi.io/School"
-let url = "https://63987374fe03352a94d1697f.mockapi.io/Products"
+let url = "https://63cbf9825c6f2e1d84bf2ac5.mockapi.io/container"
 let bag = [];
 let allProduct = [];
 let paginationWrapper = document.getElementById("pagination-wrapper");
@@ -448,44 +447,3 @@ function pContainer(){
         displayProduct(bag);
     }
 }
-
-function fetchDetails(){
-    fetch(url)
-    .then((res)=> res.json())
-    .then((data)=>{
-      let totalCount = data.length
-      let totalPages = Math.ceil(totalCount/12)
-      renderPagination(totalPages)
-    })
-  }
-  
-  // Rendering Pagination Buttons
-  function renderPagination(numOfPages){
-  
-    function listOfButtons(){
-      let arr = [];
-      for(let i = 1;i <=numOfPages; i++){
-        arr.push(getPaginationButtons(i));
-      }
-      return arr.join(" ");
-    }
-  
-    paginationWrapper.innerHTML = `
-      <div>
-        ${listOfButtons()}
-      </div>
-    `
-  
-    let pageButtons = document.querySelectorAll(".pagination-button");
-    for(let btn of pageButtons){
-        btn.addEventListener("click",(e)=>{
-          fetchData(e.target.dataset.id);
-        })
-    }
-  
-  }
-  
-  // Creating Pagination Buttons
-  function getPaginationButtons(pageNumber){
-    return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
-  }

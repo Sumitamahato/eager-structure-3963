@@ -509,8 +509,8 @@ let allData = [
         "description":"Time to get crafty! Plain Wooden Crafting Plaques serve as the base to many types of hands-on projects. Have art supplies on hand to turn these plain plaques into the art piece of your dreams, and then use the two included hooks on the back to easily hang them up wherever you need a touch of color or personality. These plaques are also absolutely perfect for crafting into personalized awards for talent shows, science fairs, and other important events. Great for home crafting, school events, art classes, youth camp activities, and more. Go from plain to personalized with these perfectly practical plaques!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v4593568851267612475/products/346832.jpg&height=940&width=940",
         "stock":"20",
-        "price":"$6.50",
-        "rating":"1.4/5",
+        "price":"6.50",
+        "rating":"1.4",
         "category": "craft"
     },
     {
@@ -519,8 +519,8 @@ let allData = [
         "description":"Decorate your indoor space with simple tools and without breaking the bank. Crafter's Square(R) introduces these sets of cutting die that you can apply to corners or make a border on the wall in the 2 designs shown. They show a unique corner pattern, and a fun flower border. they're ideal for designing unique bedrooms, classrooms, offices, business lobbies, salons, and more." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v3186182774904631305/products/328170.jpg&height=940&width=940",
         "stock":"10",
-        "price":"$6.25",
-        "rating":"1.5/5",
+        "price":"6.25",
+        "rating":"1.5",
         "category": "craft"
     },
     {
@@ -529,8 +529,8 @@ let allData = [
         "description":"Crafter's Square(R) gives you the canvas you need for your next crafted decoration with this 24x5-in. Wood Plank Hanger assorted among black, white, and natural color options. You have the idea and Crafter's Square will help make it a reality." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2759055268228869759/products/355781.jpg&height=940&width=940",
         "stock":"0",
-        "price":"$6.00",
-        "rating":"1.6/5",
+        "price":"6.00",
+        "rating":"1.6",
         "category": "craft"
     },
     {
@@ -539,8 +539,8 @@ let allData = [
         "description":"Invite everyone to your home with this charming Boho Wood Welcome Sign from Crafter's Square(R). The sign is made from alternating wood finishes and measures 15x5-in. and ready for your own creative touch." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v4774000923091315998/products/355826.jpg&height=940&width=940",
         "stock":"10",
-        "price":"$5.75",
-        "rating":"1.7/5",
+        "price":"5.75",
+        "rating":"1.7",
         "category": "craft"
     },
     {
@@ -549,8 +549,8 @@ let allData = [
         "description":"Nurture your inner Bohemian when next you craft using these Crafter's Square(R) Boho Large Wood Feathers. Get your wood feathers and string them together with jute cord to create centerpiece, mantel, and wall decorations." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v4112177067089772344/products/355889.jpg&height=940&width=940",
         "stock":"20",
-        "price":"$5.50",
-        "rating":"1.8/5",
+        "price":"5.50",
+        "rating":"1.8",
         "category": "craft"
     },
     {
@@ -559,8 +559,8 @@ let allData = [
         "description":"Make a unique decoration like GNOME-body else can! These adorable ceramic gnomes are ready to invade your home and bring a little life to any space. Their white surface serves as a clean slate for you to add paints, markers, and more to personalize them and show off your skills. Display them when you're done, or give them away as crafty gifts. These make for wonderful presents, stocking stuffers, craft nights with friends, school activities, and more. Let your crafty side show with Crafter's Square(R) DIY White Ceramic Gnomes!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1426500109606443265/products/356147.jpg&height=940&width=940",
         "stock":"30",
-        "price":"$5.25",
-        "rating":"1.9/5",
+        "price":"5.25",
+        "rating":"1.9",
         "category": "craft"
     },
     {
@@ -569,8 +569,8 @@ let allData = [
         "description":"Create a space that feels comforting and personal with the right decorative touches. Add any of these galvanized metal icons to your home or business and it instantly becomes more stylish. The designs are assorted among flowers, clouds, hearts, and stars, plus, they come in 3-ct. packs. Icons are also 4.125x4.125-in." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2435072468863179135/products/327214.jpg",
         "stock":"40",
-        "price":"$5.00",
-        "rating":"2.0/5",
+        "price":"5.00",
+        "rating":"2.0",
         "category": "craft"
     },
     {
@@ -579,8 +579,8 @@ let allData = [
         "description":"This Wood Crate with Rope Handle is begging for you to break out your crafting kit and customize it to suit your style. When you're done with your embellishments, you'll have a lovely new container to fill with even more crafting supplies. You could also use it to convey your crafted gifts to friends and loved ones. The plywood crate measures 11.4x4.3x8.6-in. and is available in the two designs pictured." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1775992829853270811/products/336540.jpg&height=940&width=940",
         "stock":"50",
-        "price":"$4.75",
-        "rating":"2.1/5",
+        "price":"4.75",
+        "rating":"2.1",
         "category": "craft"
     },
     {
@@ -589,8 +589,8 @@ let allData = [
         "description":"Natural wooden dowels are a must-have for every craft closet! Each rod measures 6-in. long and is perfect for a wide array of crafting projects. These Crafter's Square(R) Wood Dowels are perfect for home projects and art classes in school, and can even be used to support a multi-tier cake. The possibilities are endless! With 15 dowel rods in each pack, let your imagination run wild to create your next masterpiece." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v8984369168844008895/products/237604.jpg&height=940&width=940",
         "stock":"60",
-        "price":"$4.50",
-        "rating":"2.2/5",
+        "price":"4.50",
+        "rating":"2.2",
         "category": "craft"
     },
     {
@@ -599,8 +599,8 @@ let allData = [
         "description":"This Farmhouse Hanging Blackboard decoration from Crafter's Square(R) is more than just a decoration. It's more than a decoration you can customize. It's a decoration you can customize and change over time just by wiping away some chalk and drawing something new." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v6217797361427119783/products/355867.jpg&height=940&width=940",
         "stock":"70",
-        "price":"$4.25",
-        "rating":"2.3/5",
+        "price":"4.25",
+        "rating":"2.3",
         "category": "craft"
     },
     {
@@ -609,8 +609,8 @@ let allData = [
         "description":"These large metal words are a great addition to any decor just the way they are, but you can also personalize with paint, floral items, and more to make them your one-of-a-kind decor pieces. They are assorted among Happy, Home, and Family." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v6466587805511699567/products/314491.jpg&height=940&width=940",
         "stock":"80",
-        "price":"$4.00",
-        "rating":"2.4/5",
+        "price":"4.00",
+        "rating":"2.4",
         "category": "craft"
     },
     {
@@ -619,8 +619,8 @@ let allData = [
         "description":"What a fun way to spend your free time! DIY animal shapes are great for artists, crafters, art classes and kids camps, or resale. They come assorted among the tiger, dog, horse, and unicorn." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v7857496882115503330/products/296706.jpg&height=940&width=940",
         "stock":"90",
-        "price":"$3.75",
-        "rating":"2.5/5",
+        "price":"3.75",
+        "rating":"2.5",
         "category": "craft"
     },
     {
@@ -629,8 +629,8 @@ let allData = [
         "description":"Add a small personal touch to your business or home and transform it into a welcoming space you'll enjoy being in. With these galvanized metal table decorations schools, offices, homes, boutiques, restaurants, salons, and more will become stylish and charming without breaking the bank. The designs come assorted among butterflies, houses, pineapples, and flowers, and each unique design measures 1.375x4.75x7.125-in." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2624377359743059042/products/327209.jpg&height=940&width=940",
         "stock":"100",
-        "price":"$3.50",
-        "rating":"2.6/5",
+        "price":"3.50",
+        "rating":"2.6",
         "category": "craft"
     },
     {
@@ -639,8 +639,8 @@ let allData = [
         "description":"Throw a Valentine's DIY party and serve up these ready-to-go shutter wood hearts with some paint, perhaps some glitter, jewels, shells or other accessory pieces, and craft your way into each other's hearts! These shutter wood hearts are available to personalize and to create one-of-a-kind pieces. They are a crafters dream. Ideal for event planners, party planners, crafters, camp facilities, child care facilities and paint classes." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v8341390439723578564/products/323084.jpg&height=940&width=940",
         "stock":"90",
-        "price":"$3.25",
-        "rating":"2.7/5",
+        "price":"3.25",
+        "rating":"2.7",
         "category": "craft"
     },
     {
@@ -649,8 +649,8 @@ let allData = [
         "description":"Enjoy a happy holiday like Easter surrounded by your loved ones while participating in creative activities like DIYing wall signs! These adorable signs come in 4 classic shapes including eggs, bunnies, and carrots. Choose your favorite among the designs and have a blast decorating it to your hearts content. the signs make great school activities, group art projects, gifts for friends and family, and more." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1402806965197063913/products/341234.jpg",
         "stock":"80",
-        "price":"$3.00",
-        "rating":"2.8/5",
+        "price":"3.00",
+        "rating":"2.8",
         "category": "craft"
     },
     {
@@ -659,8 +659,8 @@ let allData = [
         "description":"What a fun way to spend your free time! DIY cut-outs assorted among butterfly and 2 different unicorns are great for artists, crafters, art classes and kids camps, or resale." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2239711390392146857/products/296695.jpg&height=940&width=940",
         "stock":"70",
-        "price":"$2.75",
-        "rating":"2.9/5",
+        "price":"2.75",
+        "rating":"2.9",
         "category": "craft"
     },
     {
@@ -669,8 +669,8 @@ let allData = [
         "description":"These are so much fun and they flex the creative muscles! These 4 assorted wooden painting kits will inspire you to bring color and life to all of these sets which are assorted among spacemen, funny sharks, Girl Power, and unicorns. They each measure 10.75x8.25-in. and are perfect for home, kids camps, art classes, day care centers, special events, and more. Assortment may vary. Ages 5+." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v7339781275051433556/products/263271.jpg&height=940&width=940",
         "stock":"60",
-        "price":"$2.50",
-        "rating":"3.0/5",
+        "price":"2.50",
+        "rating":"3.0",
         "category": "craft"
     },
     {
@@ -679,8 +679,8 @@ let allData = [
         "description":"Turn your whole house into a Christmas tree with these Ornament Shaped Signs from Christmas House(R). Customize them to suit your own tastes. Each ornament is 12-in. in diameter and assorted among red and green base colors." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v8997354680698574604/products/356119.jpg",
         "stock":"50",
-        "price":"$2.25",
-        "rating":"3.1/5",
+        "price":"2.25",
+        "rating":"3.1",
         "category": "craft"
     },
     {
@@ -689,8 +689,8 @@ let allData = [
         "description":"Some reminders are so transient they don't warrant pen and paper, that's where a chalkboard or dry erase board comes in. These 11x7-in. easels are the perfect size for the corner of a desk or kitchen counter. Also great for advertising sale pricing on a pop-up shop." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1206402347803881674/products/346833.jpg&height=940&width=940",
         "stock":"40",
-        "price":"$2.00",
-        "rating":"3.2/5",
+        "price":"2.00",
+        "rating":"3.2",
         "category": "craft"
     },
     {
@@ -699,8 +699,8 @@ let allData = [
         "description":"Decorate your space with something naturally inspiring. Wooden MDF word signs are a great way to remind yourself of good things, and the designs come assorted in 6 ways: laugh, love, cute, hope, hello, and home. They measure 3.625x7.5-in. Excellent for homes, office spaces, living or dining rooms, crafters, artists, and schoolrooms. Also great for resale in art supply or home decor stores" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1120851150538278189/products/300706.jpg&height=940&width=940",
         "stock":"30",
-        "price":"$1.75",
-        "rating":"3.3/5",
+        "price":"1.75",
+        "rating":"3.3",
         "category": "craft"
     },
     {
@@ -709,8 +709,8 @@ let allData = [
         "description":"Show off your favorite photos of family and friends while adding something unique to your decor at the same time! These wooden photo frames complement any style of decor perfectly, from rustic to modern, while being different enough to stand out and turn heads. Shaped like classic arch windows, these photo holders come assorted between black and cream. They measure 5.8x9.3-in. and feature strong metal clips to hold your pictures of choice firmly in place as well as sturdy back easels to prop up the windows wherever you need them. A wonderful addition to homes, dorm rooms, apartments, gifts, care packages, and more." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v6093605468920173893/products/355520.jpg&height=940&width=940",
         "stock":"20",
-        "price":"$1.50",
-        "rating":"3.4/5",
+        "price":"1.50",
+        "rating":"3.4",
         "category": "craft"
     },
     {
@@ -719,8 +719,8 @@ let allData = [
         "description":"Find the perfect starting point for your next crafted creation with these Crafter's Square(R) Assorted Hanging Beaded Shapes. Shapes are assorted among square and circle in white and rectangle and hexagon in black." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1370255442569772577/products/355868.jpg&height=940&width=940",
         "stock":"10",
-        "price":"$1.25",
-        "rating":"3.5/5",
+        "price":"1.25",
+        "rating":"3.5",
         "category": "craft"
     },
     {
@@ -729,8 +729,8 @@ let allData = [
         "description":"Put your heart on display this season with this Valentine's Day Heart-Shaped Tabletop Decoration. The heart measures just 4.9x4.9x0.4-in. and makes a handsome decoration on its own or incorporated into your own crafted decoration." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v6714271440971660104/products/362584.jpg&height=940&width=940",
         "stock":"0",
-        "price":"$1.00",
-        "rating":"3.6/5",
+        "price":"1.00",
+        "rating":"3.6",
         "category": "craft"
     },
     {
@@ -739,8 +739,8 @@ let allData = [
         "description":"This Wooden Harvest Pumpkin Décor is a simple decoration by itself or the start of your own brilliant creation. Choose from among pumpkin (3.75x4.25x0.75-in, 3.28oz), vertical (3x6.25x0.75-in. 5.11oz), or horizontal (5x4.25x0.75-in, 5.11oz) silhouettes." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v8085764329132992918/products/350162.jpg&height=940&width=940",
         "stock":"10",
-        "price":"$1.25",
-        "rating":"3.7/5",
+        "price":"1.25",
+        "rating":"3.7",
         "category": "craft"
     },
     {
@@ -749,8 +749,8 @@ let allData = [
         "description":"Have a blast this holiday season designing your own Christmas ornaments and home decor charms. These MDF DIY decorations come assorted among stars, crosses, hearts, circles, and rectangular frames. They all measure 7.75x3.5-in. The possibilities for creativity are endless!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2553732355718332356/products/301789.jpg",
         "stock":"20",
-        "price":"$1.50",
-        "rating":"3.8/5",
+        "price":"1.50",
+        "rating":"3.8",
         "category": "craft"
     },
     // section4 container
@@ -760,8 +760,8 @@ let allData = [
         "description":"Make sure your food is microwaved safely! These 6.5x2.5-in. square bowls by Cooking Concepts(TM) are 100% safe in the microwave and a sure-fire way to safely heat up your favorite tasty dishes. Great for home, restaurants, work, and more." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v7284001869531272916/products/271961.jpg&height=940&width=940",
         "stock":"30",
-        "price":"$1.75",
-        "rating":"3.9/5",
+        "price":"1.75",
+        "rating":"3.9",
         "category": "container"
     },
     {
@@ -770,8 +770,8 @@ let allData = [
         "description":"Plastic storage containers feature resealable lids that keep foods airtight and fresh. With two separate storage areas in each 8x5.5x2.75-in. container, they're perfect for lunches or saving multiple food items. Ideal for school lunches, leftovers, and resale at pharmacies, home supply, convenience and grocery stores." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v5572476626775802964/products/236834.jpg&height=940&width=940",
         "stock":"40",
-        "price":"$2.00",
-        "rating":"4.0/5",
+        "price":"2.00",
+        "rating":"4.0",
         "category": "container"
     },
     {
@@ -780,8 +780,8 @@ let allData = [
         "description":"Keep your food fresh and secure with these reusable square storage containers! Special vent lid allows steam to escape and works well for soups or food reheated in the microwave. Containers are also BPA free, freezer and top-rack dishwasher safe." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2809790993391532299/products/236799.jpg&height=940&width=940",
         "stock":"50",
-        "price":"$2.25",
-        "rating":"4.1/5",
+        "price":"2.25",
+        "rating":"4.1",
         "category": "container"
     },
     {
@@ -790,8 +790,8 @@ let allData = [
         "description":"Reusable and disposable plastic containers have tight-sealing lids that lock in freshness! Able to hold 2.9-cups, or 23.5-oz. they're the perfect size for leftovers, lunches, soups, baked goods, picnics, and more. Plus, they're BPA-free and safe for use in freezer, microwave, and dishwasher. Tough enough for everyday use." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v3871297100200119132/products/858049.jpg",
         "stock":"60",
-        "price":"$2.50",
-        "rating":"4.2/5",
+        "price":"2.50",
+        "rating":"4.2",
         "category": "container"
     },
     {
@@ -800,8 +800,8 @@ let allData = [
         "description":"Small, reusable plastic containers have a multitude of uses. The perfect size for sauce and condiment storage, school lunches, or small craft items! Plus, the lids seal tight to lock in freshness and keep everything in its place, and they stack for easy storage! each container measures 2x2� in. H.�" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v606172732189713222/products/207072.jpg&height=940&width=940",
         "stock":"70",
-        "price":"$2.75",
-        "rating":"4.3/5",
+        "price":"2.75",
+        "rating":"4.3",
         "category": "container"
     },
     {
@@ -810,8 +810,8 @@ let allData = [
         "description":"Keep all your round things fresh and ready to go with these Sure Fresh(R) round storage containers. Each container comes with vented lids to release steam when heated in a microwave. Roundness does not preclude storing square foods, it's just less practical is all." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v8094599293766474140/products/259217.jpg",
         "stock":"80",
-        "price":"$3.00",
-        "rating":"4.4/5",
+        "price":"3.00",
+        "rating":"4.4",
         "category": "container"
     },
     {
@@ -820,8 +820,8 @@ let allData = [
         "description":"McCormick Rectangular 1.5 Cups Storage Containers are the ideal size for storing those small amounts of leftovers and packing portion control lunches. They are freezer and microwave safe, but be sure to remove the lid before heating. They are also top rack dishwasher safe making cleaning up so easy. As with all food container purchases, be sure to wash before using." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v7918151737149496143/products/344734.jpg&height=940&width=940",
         "stock":"90",
-        "price":"$3.25",
-        "rating":"4.5/5",
+        "price":"3.25",
+        "rating":"4.5",
         "category": "container"
     },
     {
@@ -830,8 +830,8 @@ let allData = [
         "description":"Pack it away and McCormick(R) makes sure it stays fresh! These McCormick(R) Large Rectangular Plastic Storage Containers are about 8.25x12-in. in size and hold 12 cups, making them the perfect size for storing large quantities of leftovers and lunches. With plastic snap-on lids to ensure easy air-tight sealing, you can rest assured that your food will keep its freshness for longer without any leaking. These storage containers are perfect for transporting large dishes or for sorting the leftovers in your fridge, and are perfect for school cafeterias, soup kitchens, and more for storing food in the fridge or freezer. That's the versatile power of McCormick(R) Large Rectangular Plastic Storage Containers!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v749669249749715831/products/341021.jpg&height=940&width=940",
         "stock":"100",
-        "price":"$3.50",
-        "rating":"4.6/5",
+        "price":"3.50",
+        "rating":"4.6",
         "category": "container"
     },
     {
@@ -840,8 +840,8 @@ let allData = [
         "description":"McCormick Round 2 Cups Storage Containers are an ideal size for storing some of your leftovers and taking them to work for reheating. You can also freeze them for consumption at a later date because these containers are freezer and microwave safe, just be sure to remove the lid before heating. They are also top rack dishwasher safe, making cleanup so easy. As with all food container purchases, be sure to wash before using." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v5672631623955327135/products/344739.jpg&height=940&width=940",
         "stock":"90",
-        "price":"$3.75",
-        "rating":"4.7/5",
+        "price":"3.75",
+        "rating":"4.7",
         "category": "container"
     },
     {
@@ -850,8 +850,8 @@ let allData = [
         "description":"Whether taking it with you on the go or storing leftovers in the refrigerator, these large oval plastic storage containers with lids will help to make sure it stays fresh. These containers have a 6.6-cup capacity and can be easily washed and reused!�" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v3159066215697275719/products/259234.jpg&height=940&width=940",
         "stock":"80",
-        "price":"$4.00",
-        "rating":"4.8/5",
+        "price":"4.00",
+        "rating":"4.8",
         "category": "container"
     },
     {
@@ -860,8 +860,8 @@ let allData = [
         "description":"Keep food and beverages cold while at work or on-the-go! Each personal ice pack measures 3x5x1-in, is nontoxic, and reusable — leaving no watery mess behind to clean up! Perfect for packing lunch for adults and for the kids, or for keeping food cool on a picnic. They are a must-have addition to every lunchbox." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1419287014236958037/products/813894.jpg&height=940&width=940",
         "stock":"70",
-        "price":"$4.25",
-        "rating":"4.9/5",
+        "price":"4.25",
+        "rating":"4.9",
         "category": "container"
     },
     {
@@ -870,8 +870,8 @@ let allData = [
         "description":"Give movie night that theater feel with these fun paper popcorn bags. Each bag measures 5.25x3.25x10-in. making them perfect for serving up individual servings of popcorn for the whole family. Also great for theaters, popcorn carts, and concession stands" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1697935696165353403/products/187770.jpg&height=940&width=940",
         "stock":"60",
-        "price":"$4.50",
-        "rating":"5/5",
+        "price":"4.50",
+        "rating":"5",
         "category": "container"
     },
     {
@@ -880,8 +880,8 @@ let allData = [
         "description":"Mini plastic storage containers are great for keeping small items separated, or packing dips and sauces for lunch. These storage containers are also great for separating and storing miscellaneous nuts and bolts, craft supplies, and more! " ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v7303161299652660757/products/206990.jpg",
         "stock":"50",
-        "price":"$4.75",
-        "rating":"4.9/5",
+        "price":"4.75",
+        "rating":"4.9",
         "category": "container"
     },
     {
@@ -890,8 +890,8 @@ let allData = [
         "description":"Reusable and disposable plastic bowls have tight-sealing lids that lock in freshness! Able to hold 25.6-oz. (over 3 cups) of food. They're the perfect size for leftovers, lunches, soups, baked goods, picnics, and more. Plus, they're BPA-free and safe for use in freezer, microwave, and dishwasher. Tough enough for everyday use." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v4809083098515834864/products/858046.jpg&height=940&width=940",
         "stock":"40",
-        "price":"$5.00",
-        "rating":"4.8/5",
+        "price":"5.00",
+        "rating":"4.8",
         "category": "container"
     },
     {
@@ -900,8 +900,8 @@ let allData = [
         "description":"These Clear Plastic Containers are just what you need for storing all manner of goodies. From cookies and cereal to all the buttons you could ever need for your crafts. Each 32-oz. container includes a colored screw-top lid assorted among blue and white." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v3301187548816173615/products/987163.jpg&height=940&width=940",
         "stock":"30",
-        "price":"$5.25",
-        "rating":"4.7/5",
+        "price":"5.25",
+        "rating":"4.7",
         "category": "container"
     },
     {
@@ -910,8 +910,8 @@ let allData = [
         "description":"Make sure your food is microwaved safely and securely! These 6.5 in. round bowls by Cooking Concepts™ are 100% safe in the microwave and a sure-fire way to safely heat up your favorite tasty dishes. Great for restaurants, at home, and for resale at home goods stores." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v1767985609608519182/products/271930.jpg&height=940&width=940",
         "stock":"20",
-        "price":"$5.50",
-        "rating":"4.6/5",
+        "price":"5.50",
+        "rating":"4.6",
         "category": "container"
     },
     {
@@ -920,8 +920,8 @@ let allData = [
         "description":"Pack it away and make SURE it stays FRESH! Sure Fresh(R) Large Square Plastic Storage Containers measure 10x10x2.5-in. and are ready for the toughest jobs. Their large size is perfect for storing away lunches, leftovers, and large meals. With plastic snap-on lids to ensure easy air-tight sealing, you can rest assured that your food will keep its freshness for longer without any leaking. These storage containers are BPA-free for the health of you and your loved ones. They're also microwave and top-rack dishwasher safe. When you're done with them, they can also be repurposed and used as storage for knick-knacks, pens, pencils, small supplies, and more in your cabinets. That's the versatile power of Sure Fresh(R) Large Square Plastic Storage Containers with Lids!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v6086696495318852658/products/987166.jpg&height=940&width=940",
         "stock":"10",
-        "price":"$5.75",
-        "rating":"4.5/5",
+        "price":"5.75",
+        "rating":"4.5",
         "category": "container"
     },
     {
@@ -930,8 +930,8 @@ let allData = [
         "description":"Cooking Concepts Silicone Travel Dressing Containers, 2.875 in." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v3120697180085146168/products/236908.jpg",
         "stock":"0",
-        "price":"$6.00",
-        "rating":"4.4/5",
+        "price":"6.00",
+        "rating":"4.4",
         "category": "container"
     },
     {
@@ -940,8 +940,8 @@ let allData = [
         "description":"Serve up individual portions of your favorite baked goods in these adorable plastic ramekins. Perfect too for making small appetizers and desserts. Measuring 3.5x1.5-in. they are the perfect size for individual servings of pot-pie, quiche, macaroni and cheese, delicious ice cream sundaes, and much more. A must have for the home as well as for restaurants and caterers." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v6823414131301032693/products/159953.jpg&height=940&width=940",
         "stock":"10",
-        "price":"$6.25",
-        "rating":"4.3/5",
+        "price":"6.25",
+        "rating":"4.3",
         "category": "container"
     },
     {
@@ -950,8 +950,8 @@ let allData = [
         "description":"Perfect for storing craft supplies, leftovers, snacks, and all your miscellaneous items! Also useful for organizing classrooms, supply closets, playrooms, or work benches." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v5599013005150447603/products/218466.jpg&height=940&width=940",
         "stock":"20",
-        "price":"$6.50",
-        "rating":"4.2/5",
+        "price":"6.50",
+        "rating":"4.2",
         "category": "container"
     },
     {
@@ -960,8 +960,8 @@ let allData = [
         "description":"Prevent leakage and make sure your food stays fresh with these handy clip-lock-lid storage containers. Perfect for storing leftovers and packing with your lunch, these 11-oz. square storage containers are BPA free, and microwave and freezer safe. You can easily wash and reuse them � they're even top-rack dishwasher safe.�" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v4467958324628375615/products/218531.jpg&height=940&width=940",
         "stock":"30",
-        "price":"$6.75",
-        "rating":"4.1/5",
+        "price":"6.75",
+        "rating":"4.1",
         "category": "container"
     },
     {
@@ -970,8 +970,8 @@ let allData = [
         "description":"Perfect for storing leftovers, baked goods, and more! Each round container has a clip-lock lid with 4 locking clasps. Also useful for organizing classrooms, supply closets, playrooms, or work benches... or for building care packages." ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v2265282458974950542/products/218564.jpg&height=940&width=940",
         "stock":"40",
-        "price":"$7.00",
-        "rating":"4.0/5",
+        "price":"7.00",
+        "rating":"4.0",
         "category": "container"
     },
     {
@@ -980,8 +980,8 @@ let allData = [
         "description":"Never let leftovers go to waste again! Keep your leftovers and refrigerated food fresh with these Sure Fresh(R) Professional Round Food Containers with Lids. The 8.25x9.75x2.875-in. round food containers hold up to 7.8-oz. of whatever you choose to keep inside. The lids have a tight seal to keep your food contained and protected from the air, and the two side handles make for easy carrying and opening. A must-have for packaging leftovers or transporting meals or dishes. Ideal to have in homes, cafeterias, community center kitchens, and more" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v646245362002913006/products/259253.jpg&height=940&width=940",
         "stock":"50",
-        "price":"$7.25",
-        "rating":"3.9/5",
+        "price":"7.25",
+        "rating":"3.9",
         "category": "container"
     },
     {
@@ -990,8 +990,8 @@ let allData = [
         "description":"Keep your food storage organized while keeping food fresh with reusable plastic containers. The twist top makes it easy to access your contained goods, and the tall cylinder shape is great for saving space. Use for cereals, cookies, trail mix, and other dry foods, and more!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v250736831613483681/products/218675.jpg&height=940&width=940",
         "stock":"60",
-        "price":"$7.50",
-        "rating":"3.8/5",
+        "price":"7.50",
+        "rating":"3.8",
         "category": "container"
     },
     {
@@ -1000,8 +1000,8 @@ let allData = [
         "description":"The easiest way to keep your microwave clean. Simply place a 10-in. microwave plate cover over your microwaveable dish while reheating your food, and any spatter stays on the inside of the cover. Plus, the microwave plate covers are top rack dishwasher safe, so cleaning out the spatter is super easy!" ,
         "image":"https://www.dollartree.com/ccstore/v1/images/?source=/file/v5480211920752293978/products/166317.jpg&height=940&width=940",
         "stock":"70",
-        "price":"$7.75",
-        "rating":"3.7/5",
+        "price":"7.75",
+        "rating":"3.7",
         "category": "container"
     },
    ]
