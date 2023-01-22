@@ -106,6 +106,7 @@
     border-radius: 8px;
     border: 0px;
     background-color: #25b359;
+    color: white;
   }
 
   .pagination-button:hover{
