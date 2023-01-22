@@ -106,9 +106,9 @@ let totalSum=0;
 
     let removeBtn=document.querySelectorAll(".quantityy>button");
     removeBtn.forEach((item)=>{
-        item.addEventListener("click",function(){
-            let id=this.dataset.id
-            // console.log(id)
+        item.addEventListener("click",function(e){
+            let id=e.target.dataset.id
+            console.log(e)
             for(let i=0;i<cart.length;i++){
                 if(cart[i].id==id){
                     cart.splice(i,1);
