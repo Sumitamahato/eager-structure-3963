@@ -1,5 +1,4 @@
-// let url = "https://63987374fe03352a94d1697f.mockapi.io/School"
-let url = "https://63987374fe03352a94d1697f.mockapi.io/Products"
+let url = "https://63cbf9825c6f2e1d84bf2ac5.mockapi.io/craft"
 let bag = [];
 let allProduct = [];
 let paginationWrapper = document.getElementById("pagination-wrapper");
@@ -453,6 +452,8 @@ function pContainer(){
     }
 }
 
+// pgination 
+
 function fetchDetails(){
     fetch(url)
     .then((res)=> res.json())
@@ -494,25 +495,3 @@ function fetchDetails(){
   function getPaginationButtons(pageNumber){
     return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
   }
-
-//   sumita js 
-// loggin
-
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//        modal.style.display = "none";
-//     }
-// }
-document.getElementById("account").addEventListener("click",() =>{
-modal.style.display="block"
-
-
-})
-
-document.getElementById("cartIcon").addEventListener("click",() =>{
-window.location.href="cartPage.html"
-
-})

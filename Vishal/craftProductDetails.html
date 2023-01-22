@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style\allProductDetails.css">
+</head>
+<body>
+    <div id="container">
+        <div id ="navbar">
+            <h1>
+                This is NavBar
+            </h1>
+        </div>
+        <div id="filter">
+
+            <h3>Prices</h3>
+            <hr>
+            <div>
+                <input type="checkbox" value="less2" class="pricing" onclick="price1()"/>  Less than $ 2.00 <br>
+                <input type="checkbox" value="2To5" class="pricing" onclick="price2()"/>  $ 2.00 to $ 5.00 <br>
+                <input type="checkbox" value="upto8" class="pricing" onclick="price3()"/>  $ 5.00 to $ 8.00 <br>
+                <input type="checkbox" value="above8" class="pricing" onclick="price4()"/>  Greater than $ 8.00 <br>
+                
+            </div>
+            <hr>
+            <h3>Rating</h3>
+            <hr>
+            <div>
+                <input type="checkbox" value="rate1To2" class="rating" onclick="rate1()"/>  Less than 2/5 <br>
+                <input type="checkbox" value="rate2To3" class="rating" onclick="rate2()"/>  2/5 to 3/5 <br>
+                <input type="checkbox" value="rate3To4" class="rating" onclick="rate3()"/>  3/5 to 4/5 <br>
+                <input type="checkbox" value="above4" class="rating" onclick="rate4()"/>  Greater than 4/5 <br>
+            </div>
+            <hr>
+        </div>
+        <div id="products">
+            <h1>
+                Wood and Metal Crafts
+            </h1>
+            <p>
+                Start the school year right and skip expensive school supply prices with our affordable notebooks and notepads in a variety of cool styles and bright colors. Whether you're taking notes or leaving a memo, we've got you covered!
+            </p>
+            <select id="sort">
+                <option value="">All Products</option>
+                <option value="LowToHigh">Unit Price Low To High</option>
+                <option value="HighToLow">Unit Price High To Low</option>
+                <option value="Alpha">Title A-Z</option>
+                <option value="Alpha1">Title Z-A</option>
+            </select>
+            <a href="singleProduct.html">
+                <div id="productContainer">
+    
+                </div>
+            </a>
+            <div id="pagination-wrapper"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/craftProductDetails.js"></script>

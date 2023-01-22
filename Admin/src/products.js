@@ -65,44 +65,24 @@ let gridDisplayContainer = document.getElementById("gridDisplay");
 let showProdButton = document.getElementById("showProd");
 let addProdButton = document.getElementById("addProd");
 let editProdButton = document.getElementById("editProd");
-let delProdButton = document.getElementById("delProd");
+
+//Pagination Buttons
+let paginationWrapper = document.getElementById("pagination-wrapper");
 
 let mainData = [];
+let dLength=0;
 
-//Show product button
-showProdButton.addEventListener("click", () => {
-  fetchData();
-});
-
-// Fetching Data
-async function fetchData() {
-  try {
-    let res = await fetch(ProductsUrl);
-    let data = await res.json();
-    mainData = data;
-    showProdCard(data);
-    console.log(data)
-    // alert("Products Available")
-  } catch (error) {
-    alert("Products not available");
-    // console.log("Products not available")
-  }
-}
-
-// Method 2
-// function fetchData(){
-//     fetch(ProductsUrl)
-//     .then((res)=> res.json())
-//     .then((data)=>{
-//         console.log(data)
-//         showProdCard(data)
-//     })
-// }
-
+//get Product Function
 function showProdCard(data) {
   gridDisplayContainer.innerHTML = null;
-  data.forEach((el) => {
+  data.forEach((el,ind) => {
     let tr = document.createElement("div");
+
+    let id = document.createElement("p");
+    id.innerText = el.id;
+
+    let tr2 = document.createElement("div");
+    tr2.setAttribute("id","imgDiv");
 
     let image = document.createElement("img");
     image.setAttribute("src", el.image);
@@ -125,12 +105,63 @@ function showProdCard(data) {
     let price = document.createElement("h4");
     price.innerText = "Price: " + el.price;
 
-    tr.append(image, title, description, category, rating, stock, price);
+    let tr3 = document.createElement("div");
+    tr3.setAttribute("class","delDiv")
+
+    let deleteBtn = document.createElement("h4");
+    deleteBtn.innerText = "Delete";
+    deleteBtn.setAttribute("class","delbtn");
+    deleteBtn.setAttribute("data-id",el.id);
+
+    deleteBtn.addEventListener("click",(e)=> {
+      if(el.id == e.target.dataset.id){
+        deleteProd(el.id);
+      }
+    })
+
+    tr2.append(image)
+    tr3.append(deleteBtn);
+    tr.append(tr2, title, description, category, rating, stock, price, tr3);
     gridDisplayContainer.append(tr);
   });
 }
 
-//Add product Button
+//GET product button
+showProdButton.addEventListener("click", () => {
+  fetchData(1);
+});
+
+// GET Method
+// let fetchMe=0;
+async function fetchData(n) {
+  try {
+    let res = await fetch(`${ProductsUrl}?limit=12&page=${n}`);
+    let data = await res.json();
+    mainData = data;
+    showProdCard(data);
+    // console.log(data)
+    // paginationPages(data.length)
+    fetchDetails()
+    // fetchMe == 0 ? alert("Available Products") :'';
+    
+  } catch (error) {
+    alert("Products not available");
+    // console.log("Products not available")
+  }
+}
+
+// Method 2 for fetching data
+// function fetchData(){
+//     fetch(ProductsUrl)
+//     .then((res)=> res.json())
+//     .then((data)=>{
+//         console.log(data)
+//         showProdCard(data)
+//     })
+// }
+
+
+//Add Product function
 function value() {
   gridDisplayContainer.innerHTML = "";
   gridDisplayContainer.innerHTML = `
@@ -147,8 +178,16 @@ function value() {
       <form>
   `;
 }
+
+// Add Button
 addProdButton.addEventListener("click", async () => {
   value();
+
+  let hideBtn = document.querySelectorAll(".pagination-button");
+
+  for(let i=0;i<hideBtn.length;i++){
+    hideBtn[i].style.display = "none";
+  }
 
   let forms = document.querySelector("form");
   forms.addEventListener("submit", (e) => {
@@ -174,6 +213,7 @@ addProdButton.addEventListener("click", async () => {
   });
 });
 
+// POST Method
 async function addprod(addObj) {
   try {
     let res = await fetch(ProductsUrl, {
@@ -197,7 +237,7 @@ async function addprod(addObj) {
 }
 
 
-//Update Products
+//Edit Product function
 function val() {
   gridDisplayContainer.innerHTML = "";
   gridDisplayContainer.innerHTML = `
@@ -212,11 +252,11 @@ function val() {
             <input type="number" name="price" placeholder="Price" id="updatePriceInput">
             <input type="text" name="category" placeholder="Category" id="updateCatgInput"><br/>
             <input type="submit" id="submitButton" value="Edit">
-            <input type="submit" id="submitButton" value="Delete">
         <form>
     `;
 }
 
+// Edit Button
 editProdButton.addEventListener("click", () => {
   val();
   let forms = document.querySelector("form");
@@ -246,6 +286,7 @@ editProdButton.addEventListener("click", () => {
 });
 });
 
+//PUT Method
 async function editprod(obj) {
   try {
     let res = await fetch(
@@ -259,15 +300,89 @@ async function editprod(obj) {
       }
     );
 
-    let data = await res.json();
-    console.log(data);
+    // let data = await res.json();
+    console.log(res);
 
     if (res.ok == true) {
       alert("Updated Successfully");
     } else {
-      alert("Something went Wrong");
+      alert("Id not found, Product added successfully");
+      let new_Post=obj;
+      addprod(new_Post);
     }
   } catch (error) {
     alert("Wrong input");
   }
+}
+
+
+//Delete Product function
+async function deleteProd(obj){
+  try {
+    let res = await fetch(
+      `https://63987374fe03352a94d1697f.mockapi.io/Products/${obj}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      }
+    );
+
+    let data = await res.json();
+    // console.log(data);
+
+    if (res.ok == true) {
+      alert("Product Deleted Successfully");
+      fetchMe++;
+      fetchData();
+    } else {
+      alert("Something went Wrong");
+    }
+  } catch (error) {
+    alert("Product cannot be deleted");
+  }
+}
+
+
+// Pagination
+function fetchDetails(){
+  fetch(ProductsUrl)
+  .then((res)=> res.json())
+  .then((data)=>{
+    let totalCount = data.length
+    let totalPages = Math.ceil(totalCount/12)
+    renderPagination(totalPages)
+  })
+}
+
+// Rendering Pagination Buttons
+function renderPagination(numOfPages){
+
+  function listOfButtons(){
+    let arr = [];
+    for(let i = 1;i <=numOfPages; i++){
+      arr.push(getPaginationButtons(i));
+    }
+    return arr.join(" ");
+  }
+
+  paginationWrapper.innerHTML = `
+    <div>
+      ${listOfButtons()}
+    </div>
+  `
+
+  let pageButtons = document.querySelectorAll(".pagination-button");
+  for(let btn of pageButtons){
+      btn.addEventListener("click",(e)=>{
+        fetchData(e.target.dataset.id);
+      })
+  }
+
+}
+
+// Creating Pagination Buttons
+function getPaginationButtons(pageNumber){
+  return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
 }

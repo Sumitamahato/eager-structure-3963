@@ -6,7 +6,7 @@ let form=document.getElementById('LoginForm');
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    if(e.target[0].value=='admin@mail.com' && e.target[1].value=='admin'){
+    if(e.target[0].value=='Admin@80' && e.target[1].value=='Admin'){
         flag=true;
         localStorage.setItem('loginStatus',flag);
         console.log(localStorage.getItem('loginStatus'));

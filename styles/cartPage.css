@@ -15,7 +15,7 @@
 }
 .cartHeading>*{
     margin-bottom: 5px;
-    color: green;
+    color: rgb(0,149,76);
 }
 .cartHeading>a:hover{
     text-decoration: underline;
@@ -33,11 +33,23 @@
     margin: 0px 0px 10px 0px;
     background-color: rgb(243,243,243);
 }
+.thead>p:nth-child(2){
+    margin-left: 550px;
+}
 .trow{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     padding: 10px;
+}
+.item>img{
+    width:170px;
+}
+.itemDesc>p{
+    width: 350px;
+}
+.itemDesc>h4{
+    width: 350px;
 }
 .pickOrDeliv>div{
     display: flex;
@@ -46,6 +58,12 @@
 .pickOrDeliv>div>input{
     width: 20px;
     margin-right: 5px;
+}
+.quantityy>button{
+    border: none;
+    background: none;
+    color: green;
+    cursor: pointer;
 }
 #freeLabel{
     display: flex;
