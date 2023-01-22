@@ -21,7 +21,12 @@ estTotal.innerHTML=`$${total}`
 itemInYourCart.innerHTML=`$${total}`
 
 
-let placeOrder=document.querySelector("proceedtoCheckout>button");
+let placeOrder=document.querySelector(".proceedtoCheckout>button");
 placeOrder.addEventListener("click",function(){
     window.location.href="placed.html";
+})
+
+let editCart=document.querySelector("#editCart");
+editCart.addEventListener("click",function(){
+    window.location.href="./cartPage.html"
 })
