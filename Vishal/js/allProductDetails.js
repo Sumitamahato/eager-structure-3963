@@ -516,3 +516,8 @@ document.getElementById("cartIcon").addEventListener("click",() =>{
 window.location.href="../cartPage.html"
 
 })
+
+let logo= document.querySelector("#logoset");
+logo.addEventListener("click", ()=>{
+  window.location.href="../index.html"
+})

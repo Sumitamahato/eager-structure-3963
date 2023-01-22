@@ -68,3 +68,8 @@ document.getElementById("valentineGift").addEventListener("click",() =>{
 
 
 });
+
+let logo= document.querySelector("#logoset");
+logo.addEventListener("click", ()=>{
+  window.location.href="index.html"
+})
