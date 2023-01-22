@@ -513,6 +513,6 @@ modal.style.display="block"
 })
 
 document.getElementById("cartIcon").addEventListener("click",() =>{
-window.location.href="cartPage.html"
+window.location.href="../cartPage.html"
 
 })
