@@ -1,323 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Body styling */
+      body {
+        width: 100%;
+        margin: 0 auto;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+      #container {
+        width: 1220px;
+        margin: 0 auto;
+      }
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/2nd project-logo.jpg" type="image/x-icon">
+      /* Dropdown Button */
+      .dropbtn {
+        background-color: #04aa6d;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="style.css">
-  <title>ON-Basket</title>
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+      }
 
-  <!-- Google fonts Link -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
 
- <!-- swiper -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
 
-  <title>ON-Basket</title>
-  <style>
-    /* *{
-      margin: 0;
-      padding: 0;
-     } */
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
-    #navBar {
-      display: flex;
-      justify-content: space-around;
-    }
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
 
-    a {
-      color: black;
-      text-decoration: none;
-    }
+      /* all buttons */
+      button {
+        background-color: black;
+      }
 
-    .bar {
-      display: none;
-      position: absolute;
+      button > a {
+        color: aliceblue;
+      }
 
-    }
+      /* body styling */
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        font-family: "Spartan", "Helvetica Neue", "Arial", sans-serif !important;
+      }
 
-    .nav:hover .bar {
-      line-height: 25px;
-      display: block;
-      background-color: white;
-      cursor: pointer;
-      text-decoration: underline;
+      #head1 {
+        display: flex;
+        gap: 20px;
+        background-color: #04aa6d;
+        color: white;
+        margin-bottom: 18px;
+      }
 
-    }
+      #head2 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 18px;
+      }
 
-    /* a{
-       color:#04aa6d;
-      text-decoration: none;
-    } */
+      #body2 > div {
+        display: flex;
+        gap: 20px;
+      }
 
+      #party-supplies {
+        display: flex;
+      }
 
-    /* body styling */
-    h1 {
-      text-align: center;
-      font-size: 42px;
-      font-family: "Spartan", "Helvetica Neue", "Arial", sans-serif !important;
-    }
+      #party-supplies > div {
+        margin: 20px;
+        text-align: center;
+      }
 
+      #party-supplies > div > img {
+        border-radius: 50%;
+        width: 300px;
+        padding: 40px;
+      }
 
-    /* upperbar---start */
-    #upperBar {
-      width: 100%;
-      height: 70px;
-      background-color: #00954c;
-      color: white;
-    }
+      #party-supplies a {
+        color: black;
+        text-decoration: none;
+      }
 
-    #upperBar>img {
-      width: 20%;
-      margin-top: 60px;
-    }
+      #body6 {
+        background-color: rgb(223, 221, 221);
+        padding: 20px;
+      }
 
-    #upperBar-items {
-      display: flex;
-      width: 1220px;
-      margin: 0 auto;
-      justify-content: space-around;
-      align-items: center;
-    /* border-bottom: 1px solid #c4c4c4; */
-    }
+      #trio {
+        display: flex;
+        justify-content: space-around;
+      }
 
-    /* navBar---end */
-    #navBar>ul>li {
-      line-height: 25px;
-      font-size: 16px;
-    font-weight: 400;
-    font-family: "Nunito";
-    }
+      #trio img {
+        width: 200px;
+      }
 
-    #navBar>ul>li>a {
-      text-decoration: none;
-      color: green;
+      #body6 h1 {
+        font-size: 50px;
+        color: red;
+      }
 
-    }
+      #trio a {
+        color: black;
+        text-decoration: none;
+      }
 
-    #navBar>ul>li>b>a {
-      text-decoration: none;
-      color: black;
+      #body7 > div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
 
-    }
+      #body7 > div > div {
+        text-align: center;
+      }
 
-    #navBar>ul>li>a:hover {
-      cursor: pointer;
-      text-decoration: underline; 
-    }
-   
-     #navBar{
-    align-items: center;
-    border-bottom: 1px solid #c4c4c4;
-     }
+      #body7 > div > div > h3 {
+        font-size: 26px;
+        margin-top: 4px;
+      }
 
-    #content {
-      width: 1220px;
-      margin: 0 auto;
-    }
+      #big > div div {
+        margin-bottom: -50px;
+        position: absolute;
+        background-color: rgb(244, 241, 241);
+        opacity: 0.7;
+      }
 
+      #big button {
+        color: white;
+        padding: 20px;
+        left: -370px;
+        top: -60px;
+        position: relative;
+      }
 
-    .maxWidth {
-      width: 1220px;
-      margin: 0 auto;
-      text-align: center;
-    }
+      #big {
+        display: flex;
+      }
 
-    #firstShop {
-      display: flex;
-    }
+      .getInspired {
+        width: 250px;
+        padding: 30px;
+        text-align: center;
+      }
 
-    #secondShop {
-      display: flex;
+      .getInspired h3 > a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+      }
 
-    }
+      .getInspired h3 {
+        margin: -1px;
+      }
 
-    /* footer */
+      .shareFriend {
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
 
-    #foot {
-      background-color: #f5f5f5;
-      padding: 20px;
-    }
+      .shareFriend h2 > a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        background-color: white;
+      }
 
-    #footerItems>ul>li {
-      line-height: 25px;
-    }
+      .shareFriend h2 {
+        margin-top: -30px;
+        background-color: white;
+        width: 250px;
+      }
 
-    #footerItems>ul>li>a {
-      text-decoration: none;
-      color: green;
+      #body9 {
+        display: flex;
+      }
 
-    }
+      #bigTwo > div {
+        margin-bottom: -96px;
+        background-color: white;
+        position: relative;
+        opacity: 0.7;
+        
+      }
 
-    #footerItems>ul>li>b>a {
-      text-decoration: none;
-      color: black;
+      #foot {
+        background-color: #f5f5f5;
+      }
+      .bar{
+        display: none;
+        position: absolute;
+        
+      }
+      .nav:hover .bar{
+        display: block;
+        background-color: white;
+      }
+      #navBar{
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
 
-    }
-
-    #footerItems>ul>li>a:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    /* 2nd header */
-    .navBar-cont {
-      width: 80%;
-      height: 100px;
-      margin: auto;
-      display: flex;
-      font-family: Arial, Helvetica, sans-serif;
-      /* border: 1px solid red; */
-    }
-
-    .navBar-cont>div:nth-child(1) {
-      width: 20%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* border: 1px solid black; */
-    }
-
-    .navBar-cont>div:nth-child(1)>img {
-      width: 60%;
-    }
-
-    .navBar-cont>div:nth-child(2) {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* border: 1px solid black; */
-    }
-
-    .searching {
-      width: 70%;
-      height: 35%;
-      font-size: 15px;
-      padding: 10px;
-      border-radius: 5px;
-      /* border: 1px solid black; */
-    }
-
-    .navBar-cont>div:nth-child(2)>img {
-      margin-left: -50px;
-    }
-
-    .navBar-cont>div:nth-child(3) {
-      width: 30%;
-      height: 100%;
-      /* border: 1px solid black; */
-    }
-
-    .flex {
-      display: flex;
-    }
-
-    .flex>div:nth-child(1) {
-      width: 33%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      /* border: 1px solid blue; */
-    }
-
-    .flex>div:nth-child(1)>img {
-      width: 50%;
-      height: 23%;
-    }
-
-    .flex>div:nth-child(2) {
-      width: 33%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-left: 20px;
-      color: rgb(0, 154, 0);
-      font-size: 13px;
-      /* border: 1px solid blue; */
-    }
-
-    .flex>div:nth-child(3) {
-      width: 33%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-right: 20px;
-      color: rgb(0, 154, 0);
-      font-size: 13px;
-      /* border: 1px solid blue; */
-    }
-
-    .flex>div:nth-child(2)>p,
-    div:nth-child(3)>p {
-      margin: 0;
-    }
-
-    .flex>div:nth-child(2)>img {
-      height: 35%;
-    }
-
-    .flex>div:nth-child(3)>img {
-      margin-top: 5px;
-      height: 30%;
-    }
-    #upperBar-items>img{
-      width: 15%;
-    }
-    #login>a{
-      color: #00954c;
-    }
-  </style>
-</head>
-
-<body>
-  
-  <div id="mainContainer">
-    <!-- <div id="content"> -->
-    <div id="upperBar">
-      <div id="upperBar-items">
-        <div>
-          <i></i>
-          <p>Your Store : <a href="#">Sams Shopping Center</a></p>
-        </div>
-        <div>
-          <i></i>
-          <p>Catalog Quick Order</p>
-        </div>
-        <div>
-          <i></i>
-          <p>Order By Phone 1-877-530-TREE</p>
-        </div>
-        <div>
-          <i></i>
-          <p>Same-Day Delivery</p>
-        </div>
-        <div>
-          <i></i>
-          <p>Track Orders</p>
-        </div>
-        <img
-          src="https://www.dollartree.com/ccstore/v1/images/?source=/file/general/shop_family_dollar.png&height=30&width=193"
-          width="20%">
+  <body>
+    <!-- <a class="button" href="#">Learn more</a -->
+    <div id="container">
+      <div id="head1">
+        <h3>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>Your Store: Sams
+          Shopping center
+        </h3>
+        <h3>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>Catalog Quick
+        </h3>
+        <h3>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>Order By Phone
+          1-877-530-TREE
+        </h3>
+        <p>(Call Center Hours)</p>
+        <h3>
+          <i class="fas fa-clock" style="font-size: 24px"></i> Same-Day Delivery
+        </h3>
+        <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Track Orders</h3>
+th="20%">
       </div>
     </div>
 

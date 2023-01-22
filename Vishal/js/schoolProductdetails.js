@@ -3,13 +3,17 @@ let bag = [];
 let allProduct = [];
 let paginationWrapper = document.getElementById("pagination-wrapper");
 
-fetch(url)
-.then((res)=> res.json())
-.then((data)=>{
-    bag=data;
-    console.log(data);
-    displayProduct(data);
-})
+function fetchData(n){
+    fetch(`${url}?limit=9&page=${n}`)
+    .then((res)=> res.json())
+    .then((data)=>{
+        bag=data;
+        console.log(data);
+        displayProduct(data);
+        fetchDetails()
+    })
+}
+fetchData(1);
 
 function displayProduct(data){
     document.querySelector("#productContainer").innerHTML="";
@@ -447,3 +451,48 @@ function pContainer(){
         displayProduct(bag);
     }
 }
+
+
+// pgination 
+
+function fetchDetails(){
+    fetch(url)
+    .then((res)=> res.json())
+    .then((data)=>{
+      let totalCount = data.length
+      let totalPages = Math.ceil(totalCount/9)
+      console.log(totalCount,totalPages)
+      renderPagination(totalPages)
+    })
+  }
+  
+  // Rendering Pagination Buttons
+  function renderPagination(numOfPages){
+  
+    function listOfButtons(){
+      let arr = [];
+      for(let i = 1;i <=numOfPages; i++){
+        arr.push(getPaginationButtons(i));
+      }
+      return arr.join(" ");
+    }
+  
+    paginationWrapper.innerHTML = `
+      <div>
+        ${listOfButtons()}
+      </div>
+    `
+  
+    let pageButtons = document.querySelectorAll(".pagination-button");
+    for(let btn of pageButtons){
+        btn.addEventListener("click",(e)=>{
+          fetchData(e.target.dataset.id);
+        })
+    }
+  
+  }
+  
+  // Creating Pagination Buttons
+  function getPaginationButtons(pageNumber){
+    return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
+  }
