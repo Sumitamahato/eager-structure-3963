@@ -52,9 +52,19 @@ document.getElementById("account").addEventListener("click",() =>{
 modal.style.display="block"
 
 
-})
+});
 
 document.getElementById("cartIcon").addEventListener("click",() =>{
 window.location.href="cartPage.html"
 
-})
+});
+
+
+// linktovalentinePage
+
+document.getElementById("valentineGift").addEventListener("click",() =>{
+  window.location.href="./Vishal/allProductDetails.html"
+  // C:\Users\ASUS\Desktop\deepan\eager-structure-3963\Vishal\allProductDetails.html
+
+
+});

@@ -146,3 +146,13 @@ proceedtoCheckout.addEventListener("click",function(){
 // signupBtn.addEventListener("click",function(){
 //     window.location.href="paymentPage.html";
 // })
+
+
+
+// continueShopping
+
+document.getElementById("continueShopping").addEventListener("click", ()=>{
+window.location.href="./Vishal/allProductDetails.html"
+
+
+});

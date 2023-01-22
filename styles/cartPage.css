@@ -224,3 +224,35 @@
     background-color: rgb(30,98,193);
     border-radius: 5px;
 }
+
+
+
+/* footer */
+
+/* footer */
+
+#foot {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  #footerItems>ul>li {
+    line-height: 25px;
+  }
+  
+  #footerItems>ul>li>a {
+    text-decoration: none;
+    color: green;
+  
+  }
+  
+  #footerItems>ul>li>b>a {
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  #footerItems>ul>li>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
