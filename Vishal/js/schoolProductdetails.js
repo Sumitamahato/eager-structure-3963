@@ -496,3 +496,26 @@ function fetchDetails(){
   function getPaginationButtons(pageNumber){
     return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
   }
+
+
+  //   sumita js 
+// loggin
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//        modal.style.display = "none";
+//     }
+// }
+document.getElementById("account").addEventListener("click",() =>{
+modal.style.display="block"
+
+
+})
+
+document.getElementById("cartIcon").addEventListener("click",() =>{
+window.location.href="../cartPage.html"
+
+})
