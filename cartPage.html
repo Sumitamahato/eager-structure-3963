@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>On Basket | Cart</title>
+    <title>ON-Basket | Cart</title>
     <link rel="icon" href="images/logo4Tab.png">
     <link rel="stylesheet" href="styles/cartPage.css">
 </head>
@@ -18,18 +18,18 @@
         </div>
         <hr>
         <!-------------------------------------- Cart Items ------------------------------------------>
-        <div class="shoppingCart">
-            <div class="thead">
-                <p>ITEM</p>
-                <p>PICK UP OR DELIVERY</p>
-                <p>QUANTITY</p>
-                <p>PRICE</p>
-            </div>
-            <div class="trow">
+        <div class="thead">
+            <p>ITEM</p>
+            <p>PICK UP OR DELIVERY</p>
+            <p>QUANTITY</p>
+            <p>PRICE</p>
+        </div>
+        <div id="shoppingCart">
+            <!-- <div class="trow">
                 <div class="item">
                     <img src="https://www.dollartree.com/ccstore/v1/images/?source=/file/v3723578153817899444/products/236105.jpg&height=100&width=100" alt="">
                 </div>
-                <div>
+                <div class="itemDesc">
                     <h4>Round Plastic Storage Baskets with Handles</h4>
                     <p>SKU#: 236105</p>
                 </div>
@@ -56,7 +56,7 @@
                 <div class="price">
                     <p><span>₹</span>45.00</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <hr>
         <!---------------------------------- Cart Payment System ------------------------------------->
@@ -98,20 +98,20 @@
                     <hr>
                     <div>
                         <p>Items In Your Cart:</p>
-                        <p class="itemInCart"><span>₹</span>45.00</p>
+                        <p id="itemInCart"><span>$</span>0</p>
                     </div>
                     <div>
                         <p>Shipping:</p>
-                        <p class="shipping"><span>₹</span>-</p>
+                        <p class="shipping"><span>$</span>0</p>
                     </div>
                     <div>
                         <p>Estimated Tax:</p>
-                        <p class="tax"><span>₹</span>2.70</p>
+                        <p class="tax"><span>$</span>0</p>
                     </div>
                     <hr>
                     <div>
                         <p>ESTIMATED ORDER TOTAL:</p>
-                        <p class="total"><span>₹</span>47.70</p>
+                        <p id="total"><span>$</span>0</p>
                     </div>
                 </div>
                 <div class="proceedtoCheckout">
@@ -128,5 +128,6 @@
             <button>Sign Up</button>
         </div>
     </div>
+    <script src="scripts/cartPage.js"></script>
 </body>
 </html>

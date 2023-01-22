@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>ON-Basket | Order Placed</title>
+    <link rel="icon" href="/images/logo4Tab.png">
+</head>
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Popins', sans-serif;
+}
+.nav{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    top: 0%;
+    z-index: 5;
+}
+.navBar{
+    width: 83%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.navBar>img{
+    width: 50px;
+    margin-right: 10px;
+}
+.main{
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+.box{
+    margin: auto;
+    margin-top: 20px;
+}
+#second{
+    display: flex;
+}
+i{
+    color: green;
+}
+.box>*{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.box>button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="nav">
+        <div class="navBar">
+            <img src="/images\logo4Tab.png" alt="">
+            <h1>ON Basket</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box">
+            <h1>Congratulation</h1>
+            <div id="second">
+                <h2>Your Order has been placed successfully <i class="fa-solid fa-thumbs-up"></i></h2>
+            </div>
+            <button>Shop More</button>
+        </div>
+    </div>
+</body>
+<script>
+    let run=setTimeout(function(){
+        window.location.href="/index.html";
+    },4000)
+
+    let button=document.querySelector(".box>button");
+    button.addEventListener("click",function(){
+        window.location.href="/index.html"
+    })
+</script>
+</html>
