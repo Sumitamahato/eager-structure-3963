@@ -21,13 +21,9 @@ Deployed Link of project: "https://glittering-cannoli-4f8403.netlify.app/"
 Contributors
 
 Sumita (Team Leader)
-
 Vishal Patil
-
 Rakesh Kisku
-
 Aniket Nagpure
-
 Deepan Ghosh
 
 🛠 Tech Stack
@@ -35,6 +31,6 @@ Deepan Ghosh
 Tech stack: HTML CSS Javascript
 
 Challanges we faced
-Merging each other code on Github
-Read others code and make changes to it
+Merging each other code on Github 
+Read others code and make changes to it 
 Exact pixel-perfect cloning of the website
