@@ -21,14 +21,20 @@ Deployed Link of project: "https://glittering-cannoli-4f8403.netlify.app/"
 Contributors
 
 Sumita (Team Leader)
+
 Vishal Patil
+
 Rakesh Kisku
+
 Aniket Nagpure
+
 Deepan Ghosh
+
 
 🛠 Tech Stack
 
 Tech stack: HTML CSS Javascript
+
 
 Challanges we faced
 Merging each other code on Github 
