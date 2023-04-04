@@ -9,7 +9,8 @@ let allData = [
         "stock":"10",
         "price":"$1.00",
         "rating":"5/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"2",
@@ -19,7 +20,8 @@ let allData = [
         "stock":"20",
         "price":"$1.25",
         "rating":"4.4/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"3",
@@ -29,7 +31,8 @@ let allData = [
         "stock":"30",
         "price":"$1.50",
         "rating":"4/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"4",
@@ -39,7 +42,8 @@ let allData = [
         "stock":"40",
         "price":"$1.75",
         "rating":"4.3/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"5",
@@ -49,7 +53,8 @@ let allData = [
         "stock":"50",
         "price":"$2.00",
         "rating":"3.9/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"6",
@@ -59,7 +64,8 @@ let allData = [
         "stock":"60",
         "price":"$2.25",
         "rating":"3.8/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"7",
@@ -69,7 +75,8 @@ let allData = [
         "stock":"70",
         "price":"$2.50",
         "rating":"3/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"8",
@@ -79,7 +86,8 @@ let allData = [
         "stock":"80",
         "price":"$2.75",
         "rating":"4.9/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"9",
@@ -89,7 +97,8 @@ let allData = [
         "stock":"90",
         "price":"$3.00",
         "rating":"4.8/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"10",
@@ -99,7 +108,8 @@ let allData = [
         "stock":"100",
         "price":"$3.25",
         "rating":"4.7/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"11",
@@ -109,7 +119,8 @@ let allData = [
         "stock":"0",
         "price":"$3.50",
         "rating":"4.6/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"12",
@@ -119,7 +130,8 @@ let allData = [
         "stock":"10",
         "price":"$3.75",
         "rating":"4.5/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"13",
@@ -129,7 +141,8 @@ let allData = [
         "stock":"20",
         "price":"$4.00",
         "rating":"4.4/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"14",
@@ -139,7 +152,8 @@ let allData = [
         "stock":"30",
         "price":"$4.25",
         "rating":"4.3/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"15",
@@ -149,7 +163,8 @@ let allData = [
         "stock":"40",
         "price":"$4.50",
         "rating":"4.2/5",
-        "category": "teady"
+        "category": "teady",
+        "qunatity": 10,
     },
     {
         "id":"16",

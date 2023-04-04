@@ -23,12 +23,17 @@ const handleChange =(e, price, index)=> {
     
     let filtered = cart.filter((el, ind)=>{
         if(index == ind){
-            console.log(el);
+            // console.log(el); 
+            let obj = {...el, qnty:e}
+            return obj;
+        }else{
+            return true
         }
     })
-    console.log("e:",e, "price:", price)
-    CartPrice.push(e*price);
-    CartFunction(cart)
+    localStorage.setItem("cart", JSON.stringify(filtered))
+    console.log("e:",e, "price:", price, "sum: ", e*price)
+    CartPrice[index] = e*price;
+    CartFunction(filtered)
 }
 
 function CartFunction(arr){
@@ -41,7 +46,7 @@ function CartFunction(arr){
     let selectArray = [];
 
     arr.forEach((item, index)=>{
-        CartPrice[index] = item.price*10;
+        CartPrice[index] = item.price*item.qnty;
         CartPageItem.push( `
         <div class="trow">
             <div class="item">
@@ -81,7 +86,7 @@ function CartFunction(arr){
     let select = document.getElementsByClassName("selectQuant");
 
     cartbox.innerHTML = CartPageItem.join("")
-    console.log(CartPageItem)
+    // console.log(CartPageItem)
 }
 }
 {/* <p>$<span class='miniPrices' data-id=${item.id}>${sum.toFixed(2)}</span></p> */}
